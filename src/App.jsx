@@ -74,6 +74,9 @@ function App() {
         monthlyExVat: 'Monthly fee (excl. VAT)',
         vat: 'VAT (20%)',
         totalVat: 'Total incl. VAT',
+        feeDetails:
+          'For full details on how fees are calculated, see this spreadsheet.',
+        feeDetailsLink: 'Fee calculation details',
         currentTax: 'Current monthly tax (incl. VAT)',
         taxRateNote:
           'Tax rate: 0.60 €/m² residential, 0.31 €/m² parking + 20% VAT (incl. common areas)',
@@ -114,6 +117,9 @@ function App() {
         monthlyExVat: 'Месечна такса (без ДДС)',
         vat: 'ДДС (20%)',
         totalVat: 'Общо с ДДС',
+        feeDetails:
+          'За пълни подробности как се изчисляват таксите, вижте тази таблица.',
+        feeDetailsLink: 'Детайли за изчисленията',
         currentTax: 'Текуща месечна такса (с ДДС)',
         taxRateNote:
           'Ставка: 0.60 €/м² жилищна част, 0.31 €/м² паркинг + 20% ДДС (с общи части)',
@@ -513,6 +519,16 @@ function App() {
                 ))}
               </tbody>
             </table>
+          </div>
+          <div className="fee-details">
+            <span>{text.feeDetails}</span>
+            <a
+              href="https://docs.google.com/spreadsheets/d/1ilQosmoHEyvOLham1nboJZIHm6EzHg4nwRvUqlJ7lVU/edit?gid=0#gid=0"
+              target="_blank"
+              rel="noreferrer"
+            >
+              {text.feeDetailsLink}
+            </a>
           </div>
         </section>
       </main>

@@ -345,6 +345,26 @@
   background: rgba(196, 226, 219, 0.2);
 }
 
+.fee-details {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 12px;
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
+.fee-details a {
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.fee-details a:hover {
+  color: var(--accent-strong);
+}
+
 @keyframes rise {
   from {
     opacity: 0;
