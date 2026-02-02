@@ -2410,9 +2410,9 @@
       "displayType": "Garage"
     },
     {
-      "id": "E|ГАРЕАЖ 7",
+      "id": "E|ГАРАЖ 7",
       "entrance": "E",
-      "label": "ГАРЕАЖ 7",
+      "label": "ГАРАЖ 7",
       "type": "garage",
       "category": "residential",
       "area": 32.02,

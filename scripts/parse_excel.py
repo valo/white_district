@@ -155,7 +155,11 @@ def parse_offers() -> list[dict]:
     offer_columns = [col for col in offers_df.columns if col not in base_columns]
 
     residential_row = offers_df[offers_df["Категория"] == "Такса на кв.м. жилищна част"]
-    parking_row = offers_df[offers_df["Категория"] == "Такса на кв.м. гаражи"]
+
+    # The sheet labels this row either as "паркоместа" (parking spots) or (older versions) "гаражи".
+    parking_row = offers_df[
+        offers_df["Категория"].isin(["Такса на кв.м. паркоместа", "Такса на кв.м. гаражи"])
+    ]
 
     if residential_row.empty or parking_row.empty:
         raise ValueError("Missing rate rows for residential or parking fees.")

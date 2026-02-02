@@ -3,26 +3,26 @@
     {
       "id": "v1-24-7",
       "name": "Стопанка V1 (24/7 портиер)",
-      "residentialRate": 0.5281238703,
-      "parkingRate": 0.1021424827
+      "residentialRate": 0.5278337784,
+      "parkingRate": 0.1870736659
     },
     {
       "id": "v2-8",
       "name": "Стопанка V2 (8ч портиер)",
-      "residentialRate": 0.4013775525,
-      "parkingRate": 0.1021424827
+      "residentialRate": 0.401159636,
+      "parkingRate": 0.1870736659
     },
     {
       "id": "v3",
       "name": "Стопанка V3 (без портиер)",
-      "residentialRate": 0.3233801334,
-      "parkingRate": 0.1021424827
+      "residentialRate": 0.3232066325,
+      "parkingRate": 0.1870736659
     },
     {
       "id": "fm-solutions-12",
       "name": "FM Solutions (осреднено 12 м.)",
-      "residentialRate": 0.5679205997,
-      "parkingRate": 0.1243340358
+      "residentialRate": 0.5676142291,
+      "parkingRate": 0.260184987
     },
     {
       "id": "offer-5",
