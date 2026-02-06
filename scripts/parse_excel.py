@@ -8,7 +8,7 @@ import pandas as pd
 
 
 ROOT = Path(__file__).resolve().parents[1]
-XLSX_PATH = ROOT / "docs" / "Площи - Премиум Естейт V2.xlsx"
+DEFAULT_XLSX_PATH = ROOT / "docs" / "Площи - Премиум Естейт V2.xlsx"
 OUTPUT_UNITS = ROOT / "src" / "data" / "units.json"
 OUTPUT_OFFERS = ROOT / "src" / "data" / "offers.json"
 
@@ -38,8 +38,8 @@ def find_column_index(header_row: list, predicate) -> int:
     raise ValueError("Required column not found in header row.")
 
 
-def parse_units() -> list[dict]:
-    raw = pd.read_excel(XLSX_PATH, sheet_name="Жилищна част", header=None)
+def parse_units(xlsx_path: Path) -> list[dict]:
+    raw = pd.read_excel(xlsx_path, sheet_name="Жилищна част", header=None)
     header_idx = find_header_index(raw, "АП. №")
     header_row = [str(value) for value in raw.loc[header_idx].tolist()]
 
@@ -149,8 +149,8 @@ def parse_units() -> list[dict]:
     return units
 
 
-def parse_offers() -> list[dict]:
-    offers_df = pd.read_excel(XLSX_PATH, sheet_name="Оферти")
+def parse_offers(xlsx_path: Path) -> list[dict]:
+    offers_df = pd.read_excel(xlsx_path, sheet_name="Оферти")
     base_columns = {"Категория", "Услуга", "Бележки"}
     offer_columns = [col for col in offers_df.columns if col not in base_columns]
 
@@ -188,9 +188,21 @@ def parse_offers() -> list[dict]:
     return offers
 
 
-def main() -> None:
-    units = parse_units()
-    offers = parse_offers()
+def main(argv: list[str] | None = None) -> None:
+    import argparse
+
+    parser = argparse.ArgumentParser(description="Regenerate units.json and offers.json from the White District XLSX")
+    parser.add_argument(
+        "--xlsx",
+        type=Path,
+        default=DEFAULT_XLSX_PATH,
+        help=f"Path to XLSX (default: {DEFAULT_XLSX_PATH})",
+    )
+    args = parser.parse_args(argv)
+
+    xlsx_path: Path = args.xlsx
+    units = parse_units(xlsx_path)
+    offers = parse_offers(xlsx_path)
 
     OUTPUT_UNITS.write_text(
         json.dumps({"units": units}, ensure_ascii=False, indent=2) + "\n",
