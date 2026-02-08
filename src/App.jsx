@@ -303,6 +303,8 @@ function App() {
         return 'Гараж'
       case 'parking':
         return 'Паркомясто'
+      case 'storage':
+        return 'Мазе'
       default:
         return unit.displayType
     }

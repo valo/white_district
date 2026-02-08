@@ -108,8 +108,9 @@ def parse_units(xlsx_path: Path) -> list[dict]:
             category = "parking"
             display_type = "Parking"
         elif re.match(r"^[MМ]\d", unit_label):
-            # Storage rooms (мазе) are out of scope.
-            continue
+            unit_type = "storage"
+            category = "parking"
+            display_type = "Storage"
         else:
             continue
 

@@ -3,29 +3,35 @@
     {
       "id": "v1-24-7",
       "name": "Стопанка V1 (24/7 портиер)",
-      "residentialRate": 0.5340266677,
-      "parkingRate": 0.1932665552
+      "residentialRate": 0.5352073861,
+      "parkingRate": 0.2644689991
     },
     {
       "id": "v2-8",
       "name": "Стопанка V2 (8ч портиер)",
-      "residentialRate": 0.4073525253,
-      "parkingRate": 0.1932665552
+      "residentialRate": 0.4101567166,
+      "parkingRate": 0.2644689991
     },
     {
       "id": "v3",
       "name": "Стопанка V3 (без портиер)",
-      "residentialRate": 0.3293995217,
-      "parkingRate": 0.1932665552
+      "residentialRate": 0.3332027693,
+      "parkingRate": 0.2644689991
     },
     {
-      "id": "fm-solutions-12",
-      "name": "FM Solutions (осреднено 12 м.)",
-      "residentialRate": 0.5738071184,
-      "parkingRate": 0.2663778762
+      "id": "fm-solutions-24-7",
+      "name": "FM Solutions (24/7 портиер)",
+      "residentialRate": 0.5797125975,
+      "parkingRate": 0.3555561277
     },
     {
-      "id": "offer-5",
+      "id": "fm-solutions",
+      "name": "FM Solutions (без портиер)",
+      "residentialRate": 0.4383093657,
+      "parkingRate": 0.3555561277
+    },
+    {
+      "id": "offer-6",
       "name": "Премиум Естейт",
       "residentialRate": 0.9,
       "parkingRate": 0.5
