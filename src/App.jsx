@@ -74,6 +74,7 @@ function App() {
         monthlyExVat: 'Monthly fee (excl. VAT)',
         vat: 'VAT (20%)',
         totalVat: 'Total incl. VAT',
+        deltaVsCurrent: 'Δ vs current fee',
         feeDetails:
           'For full details on how fees are calculated, see this spreadsheet.',
         feeDetailsLink: 'Fee calculation details',
@@ -117,6 +118,7 @@ function App() {
         monthlyExVat: 'Месечна такса (без ДДС)',
         vat: 'ДДС (20%)',
         totalVat: 'Общо с ДДС',
+        deltaVsCurrent: 'Разлика спрямо текущата такса',
         feeDetails:
           'За пълни подробности как се изчисляват таксите, вижте тази таблица.',
         feeDetailsLink: 'Детайли за изчисленията',
@@ -211,17 +213,6 @@ function App() {
   const TAX_RESIDENTIAL = 0.6
   const TAX_PARKING = 0.31
 
-  const offerRows = useMemo(() => {
-    return offers.map((offer) => {
-      const monthly =
-        totals.residentialTotal * offer.residentialRate +
-        totals.parkingTotal * offer.parkingRate
-      const vat = monthly * VAT_RATE
-      const total = monthly + vat
-      return { ...offer, monthly, vat, total }
-    })
-  }, [offers, totals])
-
   const currentTax = useMemo(() => {
     const base =
       totals.residentialTotal * TAX_RESIDENTIAL +
@@ -229,6 +220,19 @@ function App() {
     const vat = base * VAT_RATE
     return base + vat
   }, [totals])
+
+  const offerRows = useMemo(() => {
+    return offers.map((offer) => {
+      const monthly =
+        totals.residentialTotal * offer.residentialRate +
+        totals.parkingTotal * offer.parkingRate
+      const vat = monthly * VAT_RATE
+      const total = monthly + vat
+      const deltaPct =
+        currentTax > 0 ? ((total - currentTax) / currentTax) * 100 : null
+      return { ...offer, monthly, vat, total, deltaPct }
+    })
+  }, [offers, totals, currentTax])
 
   const currencyFormatter = useMemo(
     () =>
@@ -258,6 +262,21 @@ function App() {
       }),
     []
   )
+
+  const percentFormatter = useMemo(
+    () =>
+      new Intl.NumberFormat('bg-BG', {
+        minimumFractionDigits: 1,
+        maximumFractionDigits: 1,
+      }),
+    []
+  )
+
+  const formatDeltaPct = (value) => {
+    if (value === null || Number.isNaN(value)) return '-'
+    const sign = value > 0 ? '+' : ''
+    return `${sign}${percentFormatter.format(value / 100)}`
+  }
 
   const handleAdd = (unitId) => {
     if (selectedSet.has(unitId)) return
@@ -504,6 +523,7 @@ function App() {
                   <th>{text.monthlyExVat}</th>
                   <th>{text.vat}</th>
                   <th>{text.totalVat}</th>
+                  <th>{text.deltaVsCurrent}</th>
                 </tr>
               </thead>
               <tbody>
@@ -515,6 +535,7 @@ function App() {
                     <td>{currencyFormatter.format(offer.monthly)}</td>
                     <td>{currencyFormatter.format(offer.vat)}</td>
                     <td>{currencyFormatter.format(offer.total)}</td>
+                    <td>{formatDeltaPct(offer.deltaPct)}</td>
                   </tr>
                 ))}
               </tbody>
