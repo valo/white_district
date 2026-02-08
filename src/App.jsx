@@ -266,6 +266,7 @@ function App() {
   const percentFormatter = useMemo(
     () =>
       new Intl.NumberFormat('bg-BG', {
+        style: 'percent',
         minimumFractionDigits: 1,
         maximumFractionDigits: 1,
       }),
