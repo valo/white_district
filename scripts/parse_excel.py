@@ -116,6 +116,12 @@ def parse_units(xlsx_path: Path) -> list[dict]:
 
         if unit_type == "storage":
             entrance = current_entrance or "?"
+            if entrance in {"A", "А", "B", "Б"}:
+                entrance = "А/Б"
+            elif entrance in {"V", "В", "G", "Г"}:
+                entrance = "В/Г"
+            elif entrance in {"D", "Д", "E", "Е"}:
+                entrance = "Д/Е"
         elif category == "parking":
             entrance = current_parking_group or "Parking"
         else:

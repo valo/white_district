@@ -1497,8 +1497,8 @@
       "displayType": "Apartment"
     },
     {
-      "id": "Б|M1",
-      "entrance": "Б",
+      "id": "А/Б|M1",
+      "entrance": "А/Б",
       "label": "M1",
       "type": "storage",
       "category": "parking",
@@ -1508,8 +1508,8 @@
       "displayType": "Storage"
     },
     {
-      "id": "Б|M2",
-      "entrance": "Б",
+      "id": "А/Б|M2",
+      "entrance": "А/Б",
       "label": "M2",
       "type": "storage",
       "category": "parking",
@@ -1519,8 +1519,8 @@
       "displayType": "Storage"
     },
     {
-      "id": "Б|M3",
-      "entrance": "Б",
+      "id": "А/Б|M3",
+      "entrance": "А/Б",
       "label": "M3",
       "type": "storage",
       "category": "parking",
@@ -1530,8 +1530,8 @@
       "displayType": "Storage"
     },
     {
-      "id": "Б|M4",
-      "entrance": "Б",
+      "id": "А/Б|M4",
+      "entrance": "А/Б",
       "label": "M4",
       "type": "storage",
       "category": "parking",
@@ -1541,8 +1541,8 @@
       "displayType": "Storage"
     },
     {
-      "id": "Б|M5",
-      "entrance": "Б",
+      "id": "А/Б|M5",
+      "entrance": "А/Б",
       "label": "M5",
       "type": "storage",
       "category": "parking",
@@ -1552,8 +1552,8 @@
       "displayType": "Storage"
     },
     {
-      "id": "Б|M6",
-      "entrance": "Б",
+      "id": "А/Б|M6",
+      "entrance": "А/Б",
       "label": "M6",
       "type": "storage",
       "category": "parking",
@@ -1563,8 +1563,8 @@
       "displayType": "Storage"
     },
     {
-      "id": "Б|M7",
-      "entrance": "Б",
+      "id": "А/Б|M7",
+      "entrance": "А/Б",
       "label": "M7",
       "type": "storage",
       "category": "parking",
@@ -1574,8 +1574,8 @@
       "displayType": "Storage"
     },
     {
-      "id": "Б|M8",
-      "entrance": "Б",
+      "id": "А/Б|M8",
+      "entrance": "А/Б",
       "label": "M8",
       "type": "storage",
       "category": "parking",
@@ -1585,8 +1585,8 @@
       "displayType": "Storage"
     },
     {
-      "id": "Б|M9",
-      "entrance": "Б",
+      "id": "А/Б|M9",
+      "entrance": "А/Б",
       "label": "M9",
       "type": "storage",
       "category": "parking",
@@ -1596,8 +1596,8 @@
       "displayType": "Storage"
     },
     {
-      "id": "Б|M9СТ",
-      "entrance": "Б",
+      "id": "А/Б|M9СТ",
+      "entrance": "А/Б",
       "label": "M9СТ",
       "type": "storage",
       "category": "parking",
@@ -1607,8 +1607,8 @@
       "displayType": "Storage"
     },
     {
-      "id": "Б|М10",
-      "entrance": "Б",
+      "id": "А/Б|М10",
+      "entrance": "А/Б",
       "label": "М10",
       "type": "storage",
       "category": "parking",
@@ -1618,8 +1618,8 @@
       "displayType": "Storage"
     },
     {
-      "id": "Б|М11",
-      "entrance": "Б",
+      "id": "А/Б|М11",
+      "entrance": "А/Б",
       "label": "М11",
       "type": "storage",
       "category": "parking",
@@ -1629,8 +1629,8 @@
       "displayType": "Storage"
     },
     {
-      "id": "Б|М12",
-      "entrance": "Б",
+      "id": "А/Б|М12",
+      "entrance": "А/Б",
       "label": "М12",
       "type": "storage",
       "category": "parking",
@@ -2223,8 +2223,8 @@
       "displayType": "Apartment"
     },
     {
-      "id": "Г|M1",
-      "entrance": "Г",
+      "id": "В/Г|M1",
+      "entrance": "В/Г",
       "label": "M1",
       "type": "storage",
       "category": "parking",
@@ -2234,8 +2234,8 @@
       "displayType": "Storage"
     },
     {
-      "id": "Г|M2",
-      "entrance": "Г",
+      "id": "В/Г|M2",
+      "entrance": "В/Г",
       "label": "M2",
       "type": "storage",
       "category": "parking",
@@ -2245,8 +2245,8 @@
       "displayType": "Storage"
     },
     {
-      "id": "Г|M3",
-      "entrance": "Г",
+      "id": "В/Г|M3",
+      "entrance": "В/Г",
       "label": "M3",
       "type": "storage",
       "category": "parking",
@@ -2256,8 +2256,8 @@
       "displayType": "Storage"
     },
     {
-      "id": "Г|M4",
-      "entrance": "Г",
+      "id": "В/Г|M4",
+      "entrance": "В/Г",
       "label": "M4",
       "type": "storage",
       "category": "parking",
@@ -2267,8 +2267,8 @@
       "displayType": "Storage"
     },
     {
-      "id": "Г|M5",
-      "entrance": "Г",
+      "id": "В/Г|M5",
+      "entrance": "В/Г",
       "label": "M5",
       "type": "storage",
       "category": "parking",
@@ -2278,8 +2278,8 @@
       "displayType": "Storage"
     },
     {
-      "id": "Г|M6",
-      "entrance": "Г",
+      "id": "В/Г|M6",
+      "entrance": "В/Г",
       "label": "M6",
       "type": "storage",
       "category": "parking",
@@ -2289,8 +2289,8 @@
       "displayType": "Storage"
     },
     {
-      "id": "Г|M7",
-      "entrance": "Г",
+      "id": "В/Г|M7",
+      "entrance": "В/Г",
       "label": "M7",
       "type": "storage",
       "category": "parking",
@@ -2300,8 +2300,8 @@
       "displayType": "Storage"
     },
     {
-      "id": "Г|M8",
-      "entrance": "Г",
+      "id": "В/Г|M8",
+      "entrance": "В/Г",
       "label": "M8",
       "type": "storage",
       "category": "parking",
@@ -2311,8 +2311,8 @@
       "displayType": "Storage"
     },
     {
-      "id": "Г|M9",
-      "entrance": "Г",
+      "id": "В/Г|M9",
+      "entrance": "В/Г",
       "label": "M9",
       "type": "storage",
       "category": "parking",
@@ -2322,8 +2322,8 @@
       "displayType": "Storage"
     },
     {
-      "id": "Г|M10",
-      "entrance": "Г",
+      "id": "В/Г|M10",
+      "entrance": "В/Г",
       "label": "M10",
       "type": "storage",
       "category": "parking",
@@ -2333,8 +2333,8 @@
       "displayType": "Storage"
     },
     {
-      "id": "Г|М11",
-      "entrance": "Г",
+      "id": "В/Г|М11",
+      "entrance": "В/Г",
       "label": "М11",
       "type": "storage",
       "category": "parking",
@@ -2344,8 +2344,8 @@
       "displayType": "Storage"
     },
     {
-      "id": "Г|М12",
-      "entrance": "Г",
+      "id": "В/Г|М12",
+      "entrance": "В/Г",
       "label": "М12",
       "type": "storage",
       "category": "parking",
@@ -2355,8 +2355,8 @@
       "displayType": "Storage"
     },
     {
-      "id": "Г|М12СТ",
-      "entrance": "Г",
+      "id": "В/Г|М12СТ",
+      "entrance": "В/Г",
       "label": "М12СТ",
       "type": "storage",
       "category": "parking",
@@ -2366,8 +2366,8 @@
       "displayType": "Storage"
     },
     {
-      "id": "Г|M13",
-      "entrance": "Г",
+      "id": "В/Г|M13",
+      "entrance": "В/Г",
       "label": "M13",
       "type": "storage",
       "category": "parking",
@@ -2377,8 +2377,8 @@
       "displayType": "Storage"
     },
     {
-      "id": "Г|M14",
-      "entrance": "Г",
+      "id": "В/Г|M14",
+      "entrance": "В/Г",
       "label": "M14",
       "type": "storage",
       "category": "parking",
@@ -2388,8 +2388,8 @@
       "displayType": "Storage"
     },
     {
-      "id": "Г|M15",
-      "entrance": "Г",
+      "id": "В/Г|M15",
+      "entrance": "В/Г",
       "label": "M15",
       "type": "storage",
       "category": "parking",
@@ -2399,8 +2399,8 @@
       "displayType": "Storage"
     },
     {
-      "id": "Г|M16",
-      "entrance": "Г",
+      "id": "В/Г|M16",
+      "entrance": "В/Г",
       "label": "M16",
       "type": "storage",
       "category": "parking",
@@ -2410,8 +2410,8 @@
       "displayType": "Storage"
     },
     {
-      "id": "Г|M17",
-      "entrance": "Г",
+      "id": "В/Г|M17",
+      "entrance": "В/Г",
       "label": "M17",
       "type": "storage",
       "category": "parking",
@@ -2421,8 +2421,8 @@
       "displayType": "Storage"
     },
     {
-      "id": "Г|M18",
-      "entrance": "Г",
+      "id": "В/Г|M18",
+      "entrance": "В/Г",
       "label": "M18",
       "type": "storage",
       "category": "parking",
@@ -2432,8 +2432,8 @@
       "displayType": "Storage"
     },
     {
-      "id": "Г|M19",
-      "entrance": "Г",
+      "id": "В/Г|M19",
+      "entrance": "В/Г",
       "label": "M19",
       "type": "storage",
       "category": "parking",
@@ -2443,8 +2443,8 @@
       "displayType": "Storage"
     },
     {
-      "id": "Г|M20",
-      "entrance": "Г",
+      "id": "В/Г|M20",
+      "entrance": "В/Г",
       "label": "M20",
       "type": "storage",
       "category": "parking",
@@ -2454,8 +2454,8 @@
       "displayType": "Storage"
     },
     {
-      "id": "Г|M20СТ",
-      "entrance": "Г",
+      "id": "В/Г|M20СТ",
+      "entrance": "В/Г",
       "label": "M20СТ",
       "type": "storage",
       "category": "parking",
@@ -2465,8 +2465,8 @@
       "displayType": "Storage"
     },
     {
-      "id": "Г|M21",
-      "entrance": "Г",
+      "id": "В/Г|M21",
+      "entrance": "В/Г",
       "label": "M21",
       "type": "storage",
       "category": "parking",
@@ -3136,8 +3136,8 @@
       "displayType": "Apartment"
     },
     {
-      "id": "E|M1",
-      "entrance": "E",
+      "id": "Д/Е|M1",
+      "entrance": "Д/Е",
       "label": "M1",
       "type": "storage",
       "category": "parking",
@@ -3147,8 +3147,8 @@
       "displayType": "Storage"
     },
     {
-      "id": "E|M2",
-      "entrance": "E",
+      "id": "Д/Е|M2",
+      "entrance": "Д/Е",
       "label": "M2",
       "type": "storage",
       "category": "parking",
@@ -3158,8 +3158,8 @@
       "displayType": "Storage"
     },
     {
-      "id": "E|M3",
-      "entrance": "E",
+      "id": "Д/Е|M3",
+      "entrance": "Д/Е",
       "label": "M3",
       "type": "storage",
       "category": "parking",
@@ -3169,8 +3169,8 @@
       "displayType": "Storage"
     },
     {
-      "id": "E|M4",
-      "entrance": "E",
+      "id": "Д/Е|M4",
+      "entrance": "Д/Е",
       "label": "M4",
       "type": "storage",
       "category": "parking",
@@ -3180,8 +3180,8 @@
       "displayType": "Storage"
     },
     {
-      "id": "E|M5",
-      "entrance": "E",
+      "id": "Д/Е|M5",
+      "entrance": "Д/Е",
       "label": "M5",
       "type": "storage",
       "category": "parking",
@@ -3191,8 +3191,8 @@
       "displayType": "Storage"
     },
     {
-      "id": "E|M6",
-      "entrance": "E",
+      "id": "Д/Е|M6",
+      "entrance": "Д/Е",
       "label": "M6",
       "type": "storage",
       "category": "parking",
@@ -3202,8 +3202,8 @@
       "displayType": "Storage"
     },
     {
-      "id": "E|M7",
-      "entrance": "E",
+      "id": "Д/Е|M7",
+      "entrance": "Д/Е",
       "label": "M7",
       "type": "storage",
       "category": "parking",
@@ -3213,8 +3213,8 @@
       "displayType": "Storage"
     },
     {
-      "id": "E|M8",
-      "entrance": "E",
+      "id": "Д/Е|M8",
+      "entrance": "Д/Е",
       "label": "M8",
       "type": "storage",
       "category": "parking",
@@ -3224,8 +3224,8 @@
       "displayType": "Storage"
     },
     {
-      "id": "E|M9",
-      "entrance": "E",
+      "id": "Д/Е|M9",
+      "entrance": "Д/Е",
       "label": "M9",
       "type": "storage",
       "category": "parking",
@@ -3235,8 +3235,8 @@
       "displayType": "Storage"
     },
     {
-      "id": "E|M10",
-      "entrance": "E",
+      "id": "Д/Е|M10",
+      "entrance": "Д/Е",
       "label": "M10",
       "type": "storage",
       "category": "parking",
@@ -3246,8 +3246,8 @@
       "displayType": "Storage"
     },
     {
-      "id": "E|М11",
-      "entrance": "E",
+      "id": "Д/Е|М11",
+      "entrance": "Д/Е",
       "label": "М11",
       "type": "storage",
       "category": "parking",
@@ -3257,8 +3257,8 @@
       "displayType": "Storage"
     },
     {
-      "id": "E|М12",
-      "entrance": "E",
+      "id": "Д/Е|М12",
+      "entrance": "Д/Е",
       "label": "М12",
       "type": "storage",
       "category": "parking",
@@ -3268,8 +3268,8 @@
       "displayType": "Storage"
     },
     {
-      "id": "E|M13",
-      "entrance": "E",
+      "id": "Д/Е|M13",
+      "entrance": "Д/Е",
       "label": "M13",
       "type": "storage",
       "category": "parking",
@@ -3279,8 +3279,8 @@
       "displayType": "Storage"
     },
     {
-      "id": "E|M14",
-      "entrance": "E",
+      "id": "Д/Е|M14",
+      "entrance": "Д/Е",
       "label": "M14",
       "type": "storage",
       "category": "parking",
@@ -3290,8 +3290,8 @@
       "displayType": "Storage"
     },
     {
-      "id": "E|M15",
-      "entrance": "E",
+      "id": "Д/Е|M15",
+      "entrance": "Д/Е",
       "label": "M15",
       "type": "storage",
       "category": "parking",
@@ -3301,8 +3301,8 @@
       "displayType": "Storage"
     },
     {
-      "id": "E|M16",
-      "entrance": "E",
+      "id": "Д/Е|M16",
+      "entrance": "Д/Е",
       "label": "M16",
       "type": "storage",
       "category": "parking",
