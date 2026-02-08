@@ -114,7 +114,9 @@ def parse_units(xlsx_path: Path) -> list[dict]:
         else:
             continue
 
-        if category == "parking":
+        if unit_type == "storage":
+            entrance = current_entrance or "?"
+        elif category == "parking":
             entrance = current_parking_group or "Parking"
         else:
             entrance = current_entrance or "?"
