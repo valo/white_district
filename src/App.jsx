@@ -139,6 +139,17 @@ function App() {
 
   const selectedSet = useMemo(() => new Set(selectedIds), [selectedIds])
 
+  const normalizeEntrance = (value) =>
+    String(value)
+      .trim()
+      .toUpperCase()
+      .replace(/А/g, 'A')
+      .replace(/Б/g, 'B')
+      .replace(/В/g, 'V')
+      .replace(/Г/g, 'G')
+      .replace(/Д/g, 'D')
+      .replace(/Е/g, 'E')
+
   const entrances = useMemo(() => {
     const values = units
       .filter((unit) => unit.category === tab)
@@ -156,11 +167,14 @@ function App() {
 
   const filteredUnits = useMemo(() => {
     const normalizedSearch = search.trim().toLowerCase()
+    const normalizedEntrance =
+      entranceFilter === 'all' ? null : normalizeEntrance(entranceFilter)
     return units
       .filter((unit) => unit.category === tab)
-      .filter((unit) =>
-        entranceFilter === 'all' ? true : unit.entrance === entranceFilter
-      )
+      .filter((unit) => {
+        if (!normalizedEntrance) return true
+        return normalizeEntrance(unit.entrance) === normalizedEntrance
+      })
       .filter((unit) =>
         normalizedSearch.length === 0
           ? true
