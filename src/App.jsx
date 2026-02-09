@@ -4,7 +4,7 @@ import offersData from './data/offers.json'
 import './App.css'
 
 function App() {
-  const [lang, setLang] = useState('en')
+  const [lang, setLang] = useState('bg')
   const [tab, setTab] = useState('residential')
   const [search, setSearch] = useState('')
   const [entranceFilter, setEntranceFilter] = useState('all')
@@ -98,8 +98,8 @@ function App() {
         unitPicker: 'Избор на имоти',
         unitPickerSubtitle:
           'Добавете апартаменти, ателиета, гаражи или паркоместа.',
-        residentialTab: 'Жилищни имоти',
-        parkingTab: 'Паркоместа',
+        residentialTab: 'Жилищни имоти и гаражи',
+        parkingTab: 'Паркоместа и мазета',
         searchLabel: 'Търсене',
         searchPlaceholder: 'напр. АП. 101, ПМ 1-2',
         entranceLabel: 'Вход',
