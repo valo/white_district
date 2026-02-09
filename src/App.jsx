@@ -98,7 +98,7 @@ function App() {
         unitPicker: 'Избор на имоти',
         unitPickerSubtitle:
           'Добавете апартаменти, ателиета, гаражи или паркоместа.',
-        residentialTab: 'Жилищни имоти',
+        residentialTab: 'Жилищни имоти и гаражи',
         parkingTab: 'Паркоместа и мазета',
         searchLabel: 'Търсене',
         searchPlaceholder: 'напр. АП. 101, ПМ 1-2',
