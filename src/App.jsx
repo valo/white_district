@@ -140,6 +140,17 @@ function App() {
 
   const selectedSet = useMemo(() => new Set(selectedIds), [selectedIds])
 
+  const isResidentialUnit = (unit) =>
+    unit.type === 'apartment' || unit.type === 'atelier'
+
+  const isParkingUnit = (unit) =>
+    unit.type === 'parking' || unit.type === 'garage' || unit.type === 'storage'
+
+  const matchesTab = (unit, currentTab) =>
+    currentTab === 'residential'
+      ? isResidentialUnit(unit)
+      : isParkingUnit(unit)
+
   const normalizeEntrance = (value) =>
     String(value)
       .trim()
@@ -153,7 +164,7 @@ function App() {
 
   const entrances = useMemo(() => {
     const values = units
-      .filter((unit) => unit.category === tab)
+      .filter((unit) => matchesTab(unit, tab))
       .map((unit) => unit.entrance)
     return Array.from(new Set(values)).sort((a, b) => {
       const [rankA, secondaryA, valueA] = getEntranceRank(a)
@@ -171,7 +182,7 @@ function App() {
     const normalizedEntrance =
       entranceFilter === 'all' ? null : normalizeEntrance(entranceFilter)
     return units
-      .filter((unit) => unit.category === tab)
+      .filter((unit) => matchesTab(unit, tab))
       .filter((unit) => {
         if (!normalizedEntrance) return true
         return normalizeEntrance(unit.entrance) === normalizedEntrance
@@ -200,7 +211,7 @@ function App() {
         const commonArea = unit.commonArea ?? 0
         const totalArea = unit.totalArea ?? baseArea + commonArea
 
-        if (unit.category === 'residential') {
+        if (isResidentialUnit(unit)) {
           acc.residentialBase += baseArea
           acc.residentialCommon += commonArea
           acc.residentialTotal += totalArea
