@@ -122,8 +122,11 @@ def parse_units(xlsx_path: Path) -> list[dict]:
                 entrance = "В/Г"
             elif entrance in {"D", "Д", "E", "Е"}:
                 entrance = "Д/Е"
-        elif category == "parking":
+        elif unit_type == "parking":
             entrance = current_parking_group or "Parking"
+        elif unit_type == "garage":
+            # Garages are billed with parking rates, but should keep their real entrance label.
+            entrance = current_entrance or "?"
         else:
             entrance = current_entrance or "?"
 
@@ -140,7 +143,8 @@ def parse_units(xlsx_path: Path) -> list[dict]:
         except (TypeError, ValueError):
             total_area = round2(area_value + common_area)
 
-        unit_id = f"{entrance}|{unit_label}"
+        # Ensure unique, stable IDs even when labels repeat (e.g. multiple "ГАРАЖ 3").
+        unit_id = f"{entrance}|{unit_label}|r{idx + 1}"
         units.append(
             {
                 "id": unit_id,

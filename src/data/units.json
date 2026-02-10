@@ -1,7 +1,7 @@
 {
   "units": [
     {
-      "id": "А/Б|ПМ 1-2",
+      "id": "А/Б|ПМ 1-2|r12",
       "entrance": "А/Б",
       "label": "ПМ 1-2",
       "type": "parking",
@@ -12,7 +12,7 @@
       "displayType": "Parking"
     },
     {
-      "id": "А/Б|ПМ 3-4",
+      "id": "А/Б|ПМ 3-4|r13",
       "entrance": "А/Б",
       "label": "ПМ 3-4",
       "type": "parking",
@@ -23,7 +23,7 @@
       "displayType": "Parking"
     },
     {
-      "id": "А/Б|ПМ 5-6",
+      "id": "А/Б|ПМ 5-6|r14",
       "entrance": "А/Б",
       "label": "ПМ 5-6",
       "type": "parking",
@@ -34,7 +34,7 @@
       "displayType": "Parking"
     },
     {
-      "id": "А/Б|ПМ 7-8",
+      "id": "А/Б|ПМ 7-8|r15",
       "entrance": "А/Б",
       "label": "ПМ 7-8",
       "type": "parking",
@@ -45,7 +45,7 @@
       "displayType": "Parking"
     },
     {
-      "id": "А/Б|ПМ 9-10",
+      "id": "А/Б|ПМ 9-10|r16",
       "entrance": "А/Б",
       "label": "ПМ 9-10",
       "type": "parking",
@@ -56,7 +56,7 @@
       "displayType": "Parking"
     },
     {
-      "id": "А/Б|ПМ 11-12",
+      "id": "А/Б|ПМ 11-12|r17",
       "entrance": "А/Б",
       "label": "ПМ 11-12",
       "type": "parking",
@@ -67,7 +67,7 @@
       "displayType": "Parking"
     },
     {
-      "id": "А/Б|ПМ 13-14",
+      "id": "А/Б|ПМ 13-14|r18",
       "entrance": "А/Б",
       "label": "ПМ 13-14",
       "type": "parking",
@@ -78,7 +78,7 @@
       "displayType": "Parking"
     },
     {
-      "id": "А/Б|ПМ 15-16",
+      "id": "А/Б|ПМ 15-16|r19",
       "entrance": "А/Б",
       "label": "ПМ 15-16",
       "type": "parking",
@@ -89,7 +89,7 @@
       "displayType": "Parking"
     },
     {
-      "id": "А/Б|ПМ 17-18",
+      "id": "А/Б|ПМ 17-18|r20",
       "entrance": "А/Б",
       "label": "ПМ 17-18",
       "type": "parking",
@@ -100,7 +100,7 @@
       "displayType": "Parking"
     },
     {
-      "id": "А/Б|ПМ 19-20",
+      "id": "А/Б|ПМ 19-20|r21",
       "entrance": "А/Б",
       "label": "ПМ 19-20",
       "type": "parking",
@@ -111,7 +111,7 @@
       "displayType": "Parking"
     },
     {
-      "id": "А/Б|ПМ 21-22",
+      "id": "А/Б|ПМ 21-22|r22",
       "entrance": "А/Б",
       "label": "ПМ 21-22",
       "type": "parking",
@@ -122,7 +122,7 @@
       "displayType": "Parking"
     },
     {
-      "id": "А/Б|ПМ 23-24",
+      "id": "А/Б|ПМ 23-24|r23",
       "entrance": "А/Б",
       "label": "ПМ 23-24",
       "type": "parking",
@@ -133,7 +133,7 @@
       "displayType": "Parking"
     },
     {
-      "id": "А/Б|ПМ 25-26",
+      "id": "А/Б|ПМ 25-26|r24",
       "entrance": "А/Б",
       "label": "ПМ 25-26",
       "type": "parking",
@@ -144,7 +144,7 @@
       "displayType": "Parking"
     },
     {
-      "id": "А/Б|ПМ 27-28",
+      "id": "А/Б|ПМ 27-28|r25",
       "entrance": "А/Б",
       "label": "ПМ 27-28",
       "type": "parking",
@@ -155,7 +155,7 @@
       "displayType": "Parking"
     },
     {
-      "id": "А/Б|ПМ 29-30",
+      "id": "А/Б|ПМ 29-30|r26",
       "entrance": "А/Б",
       "label": "ПМ 29-30",
       "type": "parking",
@@ -166,7 +166,7 @@
       "displayType": "Parking"
     },
     {
-      "id": "А/Б|ПМ 31-32",
+      "id": "А/Б|ПМ 31-32|r27",
       "entrance": "А/Б",
       "label": "ПМ 31-32",
       "type": "parking",
@@ -177,7 +177,7 @@
       "displayType": "Parking"
     },
     {
-      "id": "А/Б|ПМ 33-34",
+      "id": "А/Б|ПМ 33-34|r28",
       "entrance": "А/Б",
       "label": "ПМ 33-34",
       "type": "parking",
@@ -188,7 +188,7 @@
       "displayType": "Parking"
     },
     {
-      "id": "А/Б|ПМ 35-36",
+      "id": "А/Б|ПМ 35-36|r29",
       "entrance": "А/Б",
       "label": "ПМ 35-36",
       "type": "parking",
@@ -199,7 +199,7 @@
       "displayType": "Parking"
     },
     {
-      "id": "А/Б|ПМ 37-38",
+      "id": "А/Б|ПМ 37-38|r30",
       "entrance": "А/Б",
       "label": "ПМ 37-38",
       "type": "parking",
@@ -210,7 +210,7 @@
       "displayType": "Parking"
     },
     {
-      "id": "А/Б|ПМ 39",
+      "id": "А/Б|ПМ 39|r31",
       "entrance": "А/Б",
       "label": "ПМ 39",
       "type": "parking",
@@ -221,7 +221,7 @@
       "displayType": "Parking"
     },
     {
-      "id": "А/Б|ПМ 40",
+      "id": "А/Б|ПМ 40|r32",
       "entrance": "А/Б",
       "label": "ПМ 40",
       "type": "parking",
@@ -232,7 +232,7 @@
       "displayType": "Parking"
     },
     {
-      "id": "А/Б|ПМ 41",
+      "id": "А/Б|ПМ 41|r33",
       "entrance": "А/Б",
       "label": "ПМ 41",
       "type": "parking",
@@ -243,7 +243,7 @@
       "displayType": "Parking"
     },
     {
-      "id": "А/Б|ПМ 42",
+      "id": "А/Б|ПМ 42|r34",
       "entrance": "А/Б",
       "label": "ПМ 42",
       "type": "parking",
@@ -254,7 +254,7 @@
       "displayType": "Parking"
     },
     {
-      "id": "А/Б|ПМ 43",
+      "id": "А/Б|ПМ 43|r35",
       "entrance": "А/Б",
       "label": "ПМ 43",
       "type": "parking",
@@ -265,7 +265,7 @@
       "displayType": "Parking"
     },
     {
-      "id": "А/Б|ПМ 44",
+      "id": "А/Б|ПМ 44|r36",
       "entrance": "А/Б",
       "label": "ПМ 44",
       "type": "parking",
@@ -276,7 +276,7 @@
       "displayType": "Parking"
     },
     {
-      "id": "А/Б|ПМ 45-46",
+      "id": "А/Б|ПМ 45-46|r37",
       "entrance": "А/Б",
       "label": "ПМ 45-46",
       "type": "parking",
@@ -287,7 +287,7 @@
       "displayType": "Parking"
     },
     {
-      "id": "А/Б|ПМ 47-48",
+      "id": "А/Б|ПМ 47-48|r38",
       "entrance": "А/Б",
       "label": "ПМ 47-48",
       "type": "parking",
@@ -298,7 +298,7 @@
       "displayType": "Parking"
     },
     {
-      "id": "В/Г|ПМ 1-2",
+      "id": "В/Г|ПМ 1-2|r41",
       "entrance": "В/Г",
       "label": "ПМ 1-2",
       "type": "parking",
@@ -309,7 +309,7 @@
       "displayType": "Parking"
     },
     {
-      "id": "В/Г|ПМ 3-4",
+      "id": "В/Г|ПМ 3-4|r42",
       "entrance": "В/Г",
       "label": "ПМ 3-4",
       "type": "parking",
@@ -320,7 +320,7 @@
       "displayType": "Parking"
     },
     {
-      "id": "В/Г|ПМ 5-6",
+      "id": "В/Г|ПМ 5-6|r43",
       "entrance": "В/Г",
       "label": "ПМ 5-6",
       "type": "parking",
@@ -331,7 +331,7 @@
       "displayType": "Parking"
     },
     {
-      "id": "В/Г|ПМ 7-8",
+      "id": "В/Г|ПМ 7-8|r44",
       "entrance": "В/Г",
       "label": "ПМ 7-8",
       "type": "parking",
@@ -342,7 +342,7 @@
       "displayType": "Parking"
     },
     {
-      "id": "В/Г|ПМ 9-10",
+      "id": "В/Г|ПМ 9-10|r45",
       "entrance": "В/Г",
       "label": "ПМ 9-10",
       "type": "parking",
@@ -353,7 +353,7 @@
       "displayType": "Parking"
     },
     {
-      "id": "В/Г|ПМ 11",
+      "id": "В/Г|ПМ 11|r46",
       "entrance": "В/Г",
       "label": "ПМ 11",
       "type": "parking",
@@ -364,7 +364,7 @@
       "displayType": "Parking"
     },
     {
-      "id": "В/Г|ПМ 12",
+      "id": "В/Г|ПМ 12|r47",
       "entrance": "В/Г",
       "label": "ПМ 12",
       "type": "parking",
@@ -375,7 +375,7 @@
       "displayType": "Parking"
     },
     {
-      "id": "В/Г|ПМ 13",
+      "id": "В/Г|ПМ 13|r48",
       "entrance": "В/Г",
       "label": "ПМ 13",
       "type": "parking",
@@ -386,7 +386,7 @@
       "displayType": "Parking"
     },
     {
-      "id": "В/Г|ПМ 14",
+      "id": "В/Г|ПМ 14|r49",
       "entrance": "В/Г",
       "label": "ПМ 14",
       "type": "parking",
@@ -397,7 +397,7 @@
       "displayType": "Parking"
     },
     {
-      "id": "В/Г|ПМ 15",
+      "id": "В/Г|ПМ 15|r50",
       "entrance": "В/Г",
       "label": "ПМ 15",
       "type": "parking",
@@ -408,7 +408,7 @@
       "displayType": "Parking"
     },
     {
-      "id": "В/Г|ПМ 16",
+      "id": "В/Г|ПМ 16|r51",
       "entrance": "В/Г",
       "label": "ПМ 16",
       "type": "parking",
@@ -419,7 +419,7 @@
       "displayType": "Parking"
     },
     {
-      "id": "В/Г|ПМ 17-18",
+      "id": "В/Г|ПМ 17-18|r52",
       "entrance": "В/Г",
       "label": "ПМ 17-18",
       "type": "parking",
@@ -430,7 +430,7 @@
       "displayType": "Parking"
     },
     {
-      "id": "В/Г|ПМ 19-20",
+      "id": "В/Г|ПМ 19-20|r53",
       "entrance": "В/Г",
       "label": "ПМ 19-20",
       "type": "parking",
@@ -441,7 +441,7 @@
       "displayType": "Parking"
     },
     {
-      "id": "В/Г|ПМ 21-22",
+      "id": "В/Г|ПМ 21-22|r54",
       "entrance": "В/Г",
       "label": "ПМ 21-22",
       "type": "parking",
@@ -452,7 +452,7 @@
       "displayType": "Parking"
     },
     {
-      "id": "В/Г|ПМ 23-24",
+      "id": "В/Г|ПМ 23-24|r55",
       "entrance": "В/Г",
       "label": "ПМ 23-24",
       "type": "parking",
@@ -463,7 +463,7 @@
       "displayType": "Parking"
     },
     {
-      "id": "В/Г|ПМ 25-26",
+      "id": "В/Г|ПМ 25-26|r56",
       "entrance": "В/Г",
       "label": "ПМ 25-26",
       "type": "parking",
@@ -474,7 +474,7 @@
       "displayType": "Parking"
     },
     {
-      "id": "В/Г|ПМ 27-28",
+      "id": "В/Г|ПМ 27-28|r57",
       "entrance": "В/Г",
       "label": "ПМ 27-28",
       "type": "parking",
@@ -485,7 +485,7 @@
       "displayType": "Parking"
     },
     {
-      "id": "В/Г|ПМ 29-30",
+      "id": "В/Г|ПМ 29-30|r58",
       "entrance": "В/Г",
       "label": "ПМ 29-30",
       "type": "parking",
@@ -496,7 +496,7 @@
       "displayType": "Parking"
     },
     {
-      "id": "В/Г|ПМ 31",
+      "id": "В/Г|ПМ 31|r59",
       "entrance": "В/Г",
       "label": "ПМ 31",
       "type": "parking",
@@ -507,7 +507,7 @@
       "displayType": "Parking"
     },
     {
-      "id": "В/Г|ПМ 32",
+      "id": "В/Г|ПМ 32|r60",
       "entrance": "В/Г",
       "label": "ПМ 32",
       "type": "parking",
@@ -518,7 +518,7 @@
       "displayType": "Parking"
     },
     {
-      "id": "Д/Е|ПМ 1-2",
+      "id": "Д/Е|ПМ 1-2|r63",
       "entrance": "Д/Е",
       "label": "ПМ 1-2",
       "type": "parking",
@@ -529,7 +529,7 @@
       "displayType": "Parking"
     },
     {
-      "id": "Д/Е|ПМ 3-4",
+      "id": "Д/Е|ПМ 3-4|r64",
       "entrance": "Д/Е",
       "label": "ПМ 3-4",
       "type": "parking",
@@ -540,7 +540,7 @@
       "displayType": "Parking"
     },
     {
-      "id": "Д/Е|ПМ 5-6",
+      "id": "Д/Е|ПМ 5-6|r65",
       "entrance": "Д/Е",
       "label": "ПМ 5-6",
       "type": "parking",
@@ -551,7 +551,7 @@
       "displayType": "Parking"
     },
     {
-      "id": "Д/Е|ПМ 7-8",
+      "id": "Д/Е|ПМ 7-8|r66",
       "entrance": "Д/Е",
       "label": "ПМ 7-8",
       "type": "parking",
@@ -562,7 +562,7 @@
       "displayType": "Parking"
     },
     {
-      "id": "Д/Е|ПМ 9-10",
+      "id": "Д/Е|ПМ 9-10|r67",
       "entrance": "Д/Е",
       "label": "ПМ 9-10",
       "type": "parking",
@@ -573,7 +573,7 @@
       "displayType": "Parking"
     },
     {
-      "id": "Д/Е|ПМ 11-12",
+      "id": "Д/Е|ПМ 11-12|r68",
       "entrance": "Д/Е",
       "label": "ПМ 11-12",
       "type": "parking",
@@ -584,7 +584,7 @@
       "displayType": "Parking"
     },
     {
-      "id": "Д/Е|ПМ 13-14",
+      "id": "Д/Е|ПМ 13-14|r69",
       "entrance": "Д/Е",
       "label": "ПМ 13-14",
       "type": "parking",
@@ -595,7 +595,7 @@
       "displayType": "Parking"
     },
     {
-      "id": "Д/Е|ПМ 15",
+      "id": "Д/Е|ПМ 15|r70",
       "entrance": "Д/Е",
       "label": "ПМ 15",
       "type": "parking",
@@ -606,7 +606,7 @@
       "displayType": "Parking"
     },
     {
-      "id": "Д/Е|ПМ 16",
+      "id": "Д/Е|ПМ 16|r71",
       "entrance": "Д/Е",
       "label": "ПМ 16",
       "type": "parking",
@@ -617,7 +617,7 @@
       "displayType": "Parking"
     },
     {
-      "id": "Д/Е|ПМ 17",
+      "id": "Д/Е|ПМ 17|r72",
       "entrance": "Д/Е",
       "label": "ПМ 17",
       "type": "parking",
@@ -628,7 +628,7 @@
       "displayType": "Parking"
     },
     {
-      "id": "Д/Е|ПМ 18",
+      "id": "Д/Е|ПМ 18|r73",
       "entrance": "Д/Е",
       "label": "ПМ 18",
       "type": "parking",
@@ -639,7 +639,7 @@
       "displayType": "Parking"
     },
     {
-      "id": "Д/Е|ПМ 19",
+      "id": "Д/Е|ПМ 19|r74",
       "entrance": "Д/Е",
       "label": "ПМ 19",
       "type": "parking",
@@ -650,7 +650,7 @@
       "displayType": "Parking"
     },
     {
-      "id": "Д/Е|ПМ 20",
+      "id": "Д/Е|ПМ 20|r75",
       "entrance": "Д/Е",
       "label": "ПМ 20",
       "type": "parking",
@@ -661,7 +661,7 @@
       "displayType": "Parking"
     },
     {
-      "id": "Д/Е|ПМ 21",
+      "id": "Д/Е|ПМ 21|r76",
       "entrance": "Д/Е",
       "label": "ПМ 21",
       "type": "parking",
@@ -672,7 +672,7 @@
       "displayType": "Parking"
     },
     {
-      "id": "Д/Е|ПМ 22",
+      "id": "Д/Е|ПМ 22|r77",
       "entrance": "Д/Е",
       "label": "ПМ 22",
       "type": "parking",
@@ -683,7 +683,7 @@
       "displayType": "Parking"
     },
     {
-      "id": "Д/Е|ПМ 23",
+      "id": "Д/Е|ПМ 23|r78",
       "entrance": "Д/Е",
       "label": "ПМ 23",
       "type": "parking",
@@ -694,7 +694,7 @@
       "displayType": "Parking"
     },
     {
-      "id": "Д/Е|ПМ 24-25",
+      "id": "Д/Е|ПМ 24-25|r79",
       "entrance": "Д/Е",
       "label": "ПМ 24-25",
       "type": "parking",
@@ -705,7 +705,7 @@
       "displayType": "Parking"
     },
     {
-      "id": "Д/Е|ПМ 26-27",
+      "id": "Д/Е|ПМ 26-27|r80",
       "entrance": "Д/Е",
       "label": "ПМ 26-27",
       "type": "parking",
@@ -716,7 +716,7 @@
       "displayType": "Parking"
     },
     {
-      "id": "Д/Е|ПМ 28",
+      "id": "Д/Е|ПМ 28|r81",
       "entrance": "Д/Е",
       "label": "ПМ 28",
       "type": "parking",
@@ -727,7 +727,7 @@
       "displayType": "Parking"
     },
     {
-      "id": "Д/Е|ПМ 29",
+      "id": "Д/Е|ПМ 29|r82",
       "entrance": "Д/Е",
       "label": "ПМ 29",
       "type": "parking",
@@ -738,7 +738,7 @@
       "displayType": "Parking"
     },
     {
-      "id": "Д/Е|ПМ 30",
+      "id": "Д/Е|ПМ 30|r83",
       "entrance": "Д/Е",
       "label": "ПМ 30",
       "type": "parking",
@@ -749,7 +749,7 @@
       "displayType": "Parking"
     },
     {
-      "id": "Д/Е|ПМ 31",
+      "id": "Д/Е|ПМ 31|r84",
       "entrance": "Д/Е",
       "label": "ПМ 31",
       "type": "parking",
@@ -760,7 +760,7 @@
       "displayType": "Parking"
     },
     {
-      "id": "Д/Е|ПМ 32-33",
+      "id": "Д/Е|ПМ 32-33|r85",
       "entrance": "Д/Е",
       "label": "ПМ 32-33",
       "type": "parking",
@@ -771,7 +771,7 @@
       "displayType": "Parking"
     },
     {
-      "id": "Д/Е|ПМ 34",
+      "id": "Д/Е|ПМ 34|r86",
       "entrance": "Д/Е",
       "label": "ПМ 34",
       "type": "parking",
@@ -782,7 +782,7 @@
       "displayType": "Parking"
     },
     {
-      "id": "Д/Е|ПМ 35-36",
+      "id": "Д/Е|ПМ 35-36|r87",
       "entrance": "Д/Е",
       "label": "ПМ 35-36",
       "type": "parking",
@@ -793,7 +793,7 @@
       "displayType": "Parking"
     },
     {
-      "id": "Д/Е|ПМ 37",
+      "id": "Д/Е|ПМ 37|r88",
       "entrance": "Д/Е",
       "label": "ПМ 37",
       "type": "parking",
@@ -804,7 +804,7 @@
       "displayType": "Parking"
     },
     {
-      "id": "Д/Е|ПМ 38-39",
+      "id": "Д/Е|ПМ 38-39|r89",
       "entrance": "Д/Е",
       "label": "ПМ 38-39",
       "type": "parking",
@@ -815,7 +815,7 @@
       "displayType": "Parking"
     },
     {
-      "id": "Д/Е|ПМ 40-41",
+      "id": "Д/Е|ПМ 40-41|r90",
       "entrance": "Д/Е",
       "label": "ПМ 40-41",
       "type": "parking",
@@ -826,7 +826,7 @@
       "displayType": "Parking"
     },
     {
-      "id": "Д/Е|ПМ 42-43",
+      "id": "Д/Е|ПМ 42-43|r91",
       "entrance": "Д/Е",
       "label": "ПМ 42-43",
       "type": "parking",
@@ -837,8 +837,8 @@
       "displayType": "Parking"
     },
     {
-      "id": "Д/Е|ГАРАЖ 2",
-      "entrance": "Д/Е",
+      "id": "А|ГАРАЖ 2|r95",
+      "entrance": "А",
       "label": "ГАРАЖ 2",
       "type": "garage",
       "category": "parking",
@@ -848,8 +848,8 @@
       "displayType": "Garage"
     },
     {
-      "id": "Д/Е|ГАРАЖ 3",
-      "entrance": "Д/Е",
+      "id": "А|ГАРАЖ 3|r96",
+      "entrance": "А",
       "label": "ГАРАЖ 3",
       "type": "garage",
       "category": "parking",
@@ -859,8 +859,8 @@
       "displayType": "Garage"
     },
     {
-      "id": "Д/Е|ГАРАЖ 4",
-      "entrance": "Д/Е",
+      "id": "А|ГАРАЖ 4|r97",
+      "entrance": "А",
       "label": "ГАРАЖ 4",
       "type": "garage",
       "category": "parking",
@@ -870,8 +870,8 @@
       "displayType": "Garage"
     },
     {
-      "id": "Д/Е|ГАРАЖ 5",
-      "entrance": "Д/Е",
+      "id": "А|ГАРАЖ 5|r98",
+      "entrance": "А",
       "label": "ГАРАЖ 5",
       "type": "garage",
       "category": "parking",
@@ -881,8 +881,8 @@
       "displayType": "Garage"
     },
     {
-      "id": "Д/Е|ГАРАЖ 6",
-      "entrance": "Д/Е",
+      "id": "А|ГАРАЖ 6|r99",
+      "entrance": "А",
       "label": "ГАРАЖ 6",
       "type": "garage",
       "category": "parking",
@@ -892,8 +892,8 @@
       "displayType": "Garage"
     },
     {
-      "id": "Д/Е|ГАРАЖ 7",
-      "entrance": "Д/Е",
+      "id": "А|ГАРАЖ 7|r100",
+      "entrance": "А",
       "label": "ГАРАЖ 7",
       "type": "garage",
       "category": "parking",
@@ -903,7 +903,7 @@
       "displayType": "Garage"
     },
     {
-      "id": "А|АП. 001",
+      "id": "А|АП. 001|r101",
       "entrance": "А",
       "label": "АП. 001",
       "type": "apartment",
@@ -914,7 +914,7 @@
       "displayType": "Apartment"
     },
     {
-      "id": "А|АП. 002",
+      "id": "А|АП. 002|r102",
       "entrance": "А",
       "label": "АП. 002",
       "type": "apartment",
@@ -925,7 +925,7 @@
       "displayType": "Apartment"
     },
     {
-      "id": "А|АТ. 101",
+      "id": "А|АТ. 101|r103",
       "entrance": "А",
       "label": "АТ. 101",
       "type": "atelier",
@@ -936,7 +936,7 @@
       "displayType": "Atelier"
     },
     {
-      "id": "А|АП. 102",
+      "id": "А|АП. 102|r104",
       "entrance": "А",
       "label": "АП. 102",
       "type": "apartment",
@@ -947,7 +947,7 @@
       "displayType": "Apartment"
     },
     {
-      "id": "А|АП. 103",
+      "id": "А|АП. 103|r105",
       "entrance": "А",
       "label": "АП. 103",
       "type": "apartment",
@@ -958,7 +958,7 @@
       "displayType": "Apartment"
     },
     {
-      "id": "А|АП. 104",
+      "id": "А|АП. 104|r106",
       "entrance": "А",
       "label": "АП. 104",
       "type": "apartment",
@@ -969,7 +969,7 @@
       "displayType": "Apartment"
     },
     {
-      "id": "А|АП. 105",
+      "id": "А|АП. 105|r107",
       "entrance": "А",
       "label": "АП. 105",
       "type": "apartment",
@@ -980,7 +980,7 @@
       "displayType": "Apartment"
     },
     {
-      "id": "А|АТ. 201",
+      "id": "А|АТ. 201|r108",
       "entrance": "А",
       "label": "АТ. 201",
       "type": "atelier",
@@ -991,7 +991,7 @@
       "displayType": "Atelier"
     },
     {
-      "id": "А|АП. 202",
+      "id": "А|АП. 202|r109",
       "entrance": "А",
       "label": "АП. 202",
       "type": "apartment",
@@ -1002,7 +1002,7 @@
       "displayType": "Apartment"
     },
     {
-      "id": "А|АП. 203",
+      "id": "А|АП. 203|r110",
       "entrance": "А",
       "label": "АП. 203",
       "type": "apartment",
@@ -1013,7 +1013,7 @@
       "displayType": "Apartment"
     },
     {
-      "id": "А|АП. 204",
+      "id": "А|АП. 204|r111",
       "entrance": "А",
       "label": "АП. 204",
       "type": "apartment",
@@ -1024,7 +1024,7 @@
       "displayType": "Apartment"
     },
     {
-      "id": "А|АП. 205",
+      "id": "А|АП. 205|r112",
       "entrance": "А",
       "label": "АП. 205",
       "type": "apartment",
@@ -1035,7 +1035,7 @@
       "displayType": "Apartment"
     },
     {
-      "id": "А|АТ. 301",
+      "id": "А|АТ. 301|r113",
       "entrance": "А",
       "label": "АТ. 301",
       "type": "atelier",
@@ -1046,7 +1046,7 @@
       "displayType": "Atelier"
     },
     {
-      "id": "А|АП. 302",
+      "id": "А|АП. 302|r114",
       "entrance": "А",
       "label": "АП. 302",
       "type": "apartment",
@@ -1057,7 +1057,7 @@
       "displayType": "Apartment"
     },
     {
-      "id": "А|АП. 303",
+      "id": "А|АП. 303|r115",
       "entrance": "А",
       "label": "АП. 303",
       "type": "apartment",
@@ -1068,7 +1068,7 @@
       "displayType": "Apartment"
     },
     {
-      "id": "А|АП.304",
+      "id": "А|АП.304|r116",
       "entrance": "А",
       "label": "АП.304",
       "type": "apartment",
@@ -1079,7 +1079,7 @@
       "displayType": "Apartment"
     },
     {
-      "id": "А|АП. 305",
+      "id": "А|АП. 305|r117",
       "entrance": "А",
       "label": "АП. 305",
       "type": "apartment",
@@ -1090,7 +1090,7 @@
       "displayType": "Apartment"
     },
     {
-      "id": "А|АТ. 401",
+      "id": "А|АТ. 401|r118",
       "entrance": "А",
       "label": "АТ. 401",
       "type": "atelier",
@@ -1101,7 +1101,7 @@
       "displayType": "Atelier"
     },
     {
-      "id": "А|АП. 402",
+      "id": "А|АП. 402|r119",
       "entrance": "А",
       "label": "АП. 402",
       "type": "apartment",
@@ -1112,7 +1112,7 @@
       "displayType": "Apartment"
     },
     {
-      "id": "А|АП. 404",
+      "id": "А|АП. 404|r120",
       "entrance": "А",
       "label": "АП. 404",
       "type": "apartment",
@@ -1123,7 +1123,7 @@
       "displayType": "Apartment"
     },
     {
-      "id": "А|АП. 405",
+      "id": "А|АП. 405|r121",
       "entrance": "А",
       "label": "АП. 405",
       "type": "apartment",
@@ -1134,7 +1134,7 @@
       "displayType": "Apartment"
     },
     {
-      "id": "А|АТ. 501",
+      "id": "А|АТ. 501|r122",
       "entrance": "А",
       "label": "АТ. 501",
       "type": "atelier",
@@ -1145,7 +1145,7 @@
       "displayType": "Atelier"
     },
     {
-      "id": "А|АП. 502",
+      "id": "А|АП. 502|r123",
       "entrance": "А",
       "label": "АП. 502",
       "type": "apartment",
@@ -1156,7 +1156,7 @@
       "displayType": "Apartment"
     },
     {
-      "id": "А|АП. 503",
+      "id": "А|АП. 503|r124",
       "entrance": "А",
       "label": "АП. 503",
       "type": "apartment",
@@ -1167,7 +1167,7 @@
       "displayType": "Apartment"
     },
     {
-      "id": "А|АП. 504",
+      "id": "А|АП. 504|r125",
       "entrance": "А",
       "label": "АП. 504",
       "type": "apartment",
@@ -1178,7 +1178,7 @@
       "displayType": "Apartment"
     },
     {
-      "id": "А|АП. 601",
+      "id": "А|АП. 601|r126",
       "entrance": "А",
       "label": "АП. 601",
       "type": "apartment",
@@ -1189,7 +1189,7 @@
       "displayType": "Apartment"
     },
     {
-      "id": "А|АП. 602",
+      "id": "А|АП. 602|r127",
       "entrance": "А",
       "label": "АП. 602",
       "type": "apartment",
@@ -1200,7 +1200,7 @@
       "displayType": "Apartment"
     },
     {
-      "id": "А|АП. 603",
+      "id": "А|АП. 603|r128",
       "entrance": "А",
       "label": "АП. 603",
       "type": "apartment",
@@ -1211,8 +1211,8 @@
       "displayType": "Apartment"
     },
     {
-      "id": "Д/Е|ГАРАЖ 3",
-      "entrance": "Д/Е",
+      "id": "Б|ГАРАЖ 3|r131",
+      "entrance": "Б",
       "label": "ГАРАЖ 3",
       "type": "garage",
       "category": "parking",
@@ -1222,7 +1222,7 @@
       "displayType": "Garage"
     },
     {
-      "id": "Б|АП. 001",
+      "id": "Б|АП. 001|r132",
       "entrance": "Б",
       "label": "АП. 001",
       "type": "apartment",
@@ -1233,7 +1233,7 @@
       "displayType": "Apartment"
     },
     {
-      "id": "Б|АП. 002",
+      "id": "Б|АП. 002|r133",
       "entrance": "Б",
       "label": "АП. 002",
       "type": "apartment",
@@ -1244,7 +1244,7 @@
       "displayType": "Apartment"
     },
     {
-      "id": "Б|АТ. 101",
+      "id": "Б|АТ. 101|r134",
       "entrance": "Б",
       "label": "АТ. 101",
       "type": "atelier",
@@ -1255,7 +1255,7 @@
       "displayType": "Atelier"
     },
     {
-      "id": "Б|АП. 102",
+      "id": "Б|АП. 102|r135",
       "entrance": "Б",
       "label": "АП. 102",
       "type": "apartment",
@@ -1266,7 +1266,7 @@
       "displayType": "Apartment"
     },
     {
-      "id": "Б|АП. 103",
+      "id": "Б|АП. 103|r136",
       "entrance": "Б",
       "label": "АП. 103",
       "type": "apartment",
@@ -1277,7 +1277,7 @@
       "displayType": "Apartment"
     },
     {
-      "id": "Б|АП. 104",
+      "id": "Б|АП. 104|r137",
       "entrance": "Б",
       "label": "АП. 104",
       "type": "apartment",
@@ -1288,7 +1288,7 @@
       "displayType": "Apartment"
     },
     {
-      "id": "Б|АТ. 201",
+      "id": "Б|АТ. 201|r138",
       "entrance": "Б",
       "label": "АТ. 201",
       "type": "atelier",
@@ -1299,7 +1299,7 @@
       "displayType": "Atelier"
     },
     {
-      "id": "Б|АП. 202",
+      "id": "Б|АП. 202|r139",
       "entrance": "Б",
       "label": "АП. 202",
       "type": "apartment",
@@ -1310,7 +1310,7 @@
       "displayType": "Apartment"
     },
     {
-      "id": "Б|АП. 203",
+      "id": "Б|АП. 203|r140",
       "entrance": "Б",
       "label": "АП. 203",
       "type": "apartment",
@@ -1321,7 +1321,7 @@
       "displayType": "Apartment"
     },
     {
-      "id": "Б|АП. 204",
+      "id": "Б|АП. 204|r141",
       "entrance": "Б",
       "label": "АП. 204",
       "type": "apartment",
@@ -1332,7 +1332,7 @@
       "displayType": "Apartment"
     },
     {
-      "id": "Б|АТ. 301",
+      "id": "Б|АТ. 301|r142",
       "entrance": "Б",
       "label": "АТ. 301",
       "type": "atelier",
@@ -1343,7 +1343,7 @@
       "displayType": "Atelier"
     },
     {
-      "id": "Б|АП. 302",
+      "id": "Б|АП. 302|r143",
       "entrance": "Б",
       "label": "АП. 302",
       "type": "apartment",
@@ -1354,7 +1354,7 @@
       "displayType": "Apartment"
     },
     {
-      "id": "Б|АП. 303",
+      "id": "Б|АП. 303|r144",
       "entrance": "Б",
       "label": "АП. 303",
       "type": "apartment",
@@ -1365,7 +1365,7 @@
       "displayType": "Apartment"
     },
     {
-      "id": "Б|АП.304",
+      "id": "Б|АП.304|r145",
       "entrance": "Б",
       "label": "АП.304",
       "type": "apartment",
@@ -1376,7 +1376,7 @@
       "displayType": "Apartment"
     },
     {
-      "id": "Б|АТ. 401",
+      "id": "Б|АТ. 401|r146",
       "entrance": "Б",
       "label": "АТ. 401",
       "type": "atelier",
@@ -1387,7 +1387,7 @@
       "displayType": "Atelier"
     },
     {
-      "id": "Б|АП. 402",
+      "id": "Б|АП. 402|r147",
       "entrance": "Б",
       "label": "АП. 402",
       "type": "apartment",
@@ -1398,7 +1398,7 @@
       "displayType": "Apartment"
     },
     {
-      "id": "Б|АП. 403",
+      "id": "Б|АП. 403|r148",
       "entrance": "Б",
       "label": "АП. 403",
       "type": "apartment",
@@ -1409,7 +1409,7 @@
       "displayType": "Apartment"
     },
     {
-      "id": "Б|АП. 404",
+      "id": "Б|АП. 404|r149",
       "entrance": "Б",
       "label": "АП. 404",
       "type": "apartment",
@@ -1420,7 +1420,7 @@
       "displayType": "Apartment"
     },
     {
-      "id": "Б|АТ. 501",
+      "id": "Б|АТ. 501|r150",
       "entrance": "Б",
       "label": "АТ. 501",
       "type": "atelier",
@@ -1431,7 +1431,7 @@
       "displayType": "Atelier"
     },
     {
-      "id": "Б|АП. 502",
+      "id": "Б|АП. 502|r151",
       "entrance": "Б",
       "label": "АП. 502",
       "type": "apartment",
@@ -1442,7 +1442,7 @@
       "displayType": "Apartment"
     },
     {
-      "id": "Б|АП. 503",
+      "id": "Б|АП. 503|r152",
       "entrance": "Б",
       "label": "АП. 503",
       "type": "apartment",
@@ -1453,7 +1453,7 @@
       "displayType": "Apartment"
     },
     {
-      "id": "Б|АП. 504",
+      "id": "Б|АП. 504|r153",
       "entrance": "Б",
       "label": "АП. 504",
       "type": "apartment",
@@ -1464,7 +1464,7 @@
       "displayType": "Apartment"
     },
     {
-      "id": "Б|АП. 601",
+      "id": "Б|АП. 601|r154",
       "entrance": "Б",
       "label": "АП. 601",
       "type": "apartment",
@@ -1475,7 +1475,7 @@
       "displayType": "Apartment"
     },
     {
-      "id": "Б|АП. 602",
+      "id": "Б|АП. 602|r155",
       "entrance": "Б",
       "label": "АП. 602",
       "type": "apartment",
@@ -1486,7 +1486,7 @@
       "displayType": "Apartment"
     },
     {
-      "id": "Б|АП. 603",
+      "id": "Б|АП. 603|r156",
       "entrance": "Б",
       "label": "АП. 603",
       "type": "apartment",
@@ -1497,7 +1497,7 @@
       "displayType": "Apartment"
     },
     {
-      "id": "А/Б|M1",
+      "id": "А/Б|M1|r157",
       "entrance": "А/Б",
       "label": "M1",
       "type": "storage",
@@ -1508,7 +1508,7 @@
       "displayType": "Storage"
     },
     {
-      "id": "А/Б|M2",
+      "id": "А/Б|M2|r158",
       "entrance": "А/Б",
       "label": "M2",
       "type": "storage",
@@ -1519,7 +1519,7 @@
       "displayType": "Storage"
     },
     {
-      "id": "А/Б|M3",
+      "id": "А/Б|M3|r159",
       "entrance": "А/Б",
       "label": "M3",
       "type": "storage",
@@ -1530,7 +1530,7 @@
       "displayType": "Storage"
     },
     {
-      "id": "А/Б|M4",
+      "id": "А/Б|M4|r160",
       "entrance": "А/Б",
       "label": "M4",
       "type": "storage",
@@ -1541,7 +1541,7 @@
       "displayType": "Storage"
     },
     {
-      "id": "А/Б|M5",
+      "id": "А/Б|M5|r161",
       "entrance": "А/Б",
       "label": "M5",
       "type": "storage",
@@ -1552,7 +1552,7 @@
       "displayType": "Storage"
     },
     {
-      "id": "А/Б|M6",
+      "id": "А/Б|M6|r162",
       "entrance": "А/Б",
       "label": "M6",
       "type": "storage",
@@ -1563,7 +1563,7 @@
       "displayType": "Storage"
     },
     {
-      "id": "А/Б|M7",
+      "id": "А/Б|M7|r163",
       "entrance": "А/Б",
       "label": "M7",
       "type": "storage",
@@ -1574,7 +1574,7 @@
       "displayType": "Storage"
     },
     {
-      "id": "А/Б|M8",
+      "id": "А/Б|M8|r164",
       "entrance": "А/Б",
       "label": "M8",
       "type": "storage",
@@ -1585,7 +1585,7 @@
       "displayType": "Storage"
     },
     {
-      "id": "А/Б|M9",
+      "id": "А/Б|M9|r165",
       "entrance": "А/Б",
       "label": "M9",
       "type": "storage",
@@ -1596,7 +1596,7 @@
       "displayType": "Storage"
     },
     {
-      "id": "А/Б|M9СТ",
+      "id": "А/Б|M9СТ|r166",
       "entrance": "А/Б",
       "label": "M9СТ",
       "type": "storage",
@@ -1607,7 +1607,7 @@
       "displayType": "Storage"
     },
     {
-      "id": "А/Б|М10",
+      "id": "А/Б|М10|r167",
       "entrance": "А/Б",
       "label": "М10",
       "type": "storage",
@@ -1618,7 +1618,7 @@
       "displayType": "Storage"
     },
     {
-      "id": "А/Б|М11",
+      "id": "А/Б|М11|r168",
       "entrance": "А/Б",
       "label": "М11",
       "type": "storage",
@@ -1629,7 +1629,7 @@
       "displayType": "Storage"
     },
     {
-      "id": "А/Б|М12",
+      "id": "А/Б|М12|r169",
       "entrance": "А/Б",
       "label": "М12",
       "type": "storage",
@@ -1640,8 +1640,8 @@
       "displayType": "Storage"
     },
     {
-      "id": "Д/Е|ГАРАЖ 3",
-      "entrance": "Д/Е",
+      "id": "В|ГАРАЖ 3|r172",
+      "entrance": "В",
       "label": "ГАРАЖ 3",
       "type": "garage",
       "category": "parking",
@@ -1651,8 +1651,8 @@
       "displayType": "Garage"
     },
     {
-      "id": "Д/Е|ГАРАЖ 4",
-      "entrance": "Д/Е",
+      "id": "В|ГАРАЖ 4|r173",
+      "entrance": "В",
       "label": "ГАРАЖ 4",
       "type": "garage",
       "category": "parking",
@@ -1662,7 +1662,7 @@
       "displayType": "Garage"
     },
     {
-      "id": "В|АП. 001",
+      "id": "В|АП. 001|r174",
       "entrance": "В",
       "label": "АП. 001",
       "type": "apartment",
@@ -1673,7 +1673,7 @@
       "displayType": "Apartment"
     },
     {
-      "id": "В|АП. 002",
+      "id": "В|АП. 002|r175",
       "entrance": "В",
       "label": "АП. 002",
       "type": "apartment",
@@ -1684,7 +1684,7 @@
       "displayType": "Apartment"
     },
     {
-      "id": "В|АТ. 101",
+      "id": "В|АТ. 101|r176",
       "entrance": "В",
       "label": "АТ. 101",
       "type": "atelier",
@@ -1695,7 +1695,7 @@
       "displayType": "Atelier"
     },
     {
-      "id": "В|АП. 102",
+      "id": "В|АП. 102|r177",
       "entrance": "В",
       "label": "АП. 102",
       "type": "apartment",
@@ -1706,7 +1706,7 @@
       "displayType": "Apartment"
     },
     {
-      "id": "В|АП. 103",
+      "id": "В|АП. 103|r178",
       "entrance": "В",
       "label": "АП. 103",
       "type": "apartment",
@@ -1717,7 +1717,7 @@
       "displayType": "Apartment"
     },
     {
-      "id": "В|АП. 104",
+      "id": "В|АП. 104|r179",
       "entrance": "В",
       "label": "АП. 104",
       "type": "apartment",
@@ -1728,7 +1728,7 @@
       "displayType": "Apartment"
     },
     {
-      "id": "В|АТ. 201",
+      "id": "В|АТ. 201|r180",
       "entrance": "В",
       "label": "АТ. 201",
       "type": "atelier",
@@ -1739,7 +1739,7 @@
       "displayType": "Atelier"
     },
     {
-      "id": "В|АП. 202",
+      "id": "В|АП. 202|r181",
       "entrance": "В",
       "label": "АП. 202",
       "type": "apartment",
@@ -1750,7 +1750,7 @@
       "displayType": "Apartment"
     },
     {
-      "id": "В|АП. 203",
+      "id": "В|АП. 203|r182",
       "entrance": "В",
       "label": "АП. 203",
       "type": "apartment",
@@ -1761,7 +1761,7 @@
       "displayType": "Apartment"
     },
     {
-      "id": "В|АП. 204",
+      "id": "В|АП. 204|r183",
       "entrance": "В",
       "label": "АП. 204",
       "type": "apartment",
@@ -1772,7 +1772,7 @@
       "displayType": "Apartment"
     },
     {
-      "id": "В|АТ. 301",
+      "id": "В|АТ. 301|r184",
       "entrance": "В",
       "label": "АТ. 301",
       "type": "atelier",
@@ -1783,7 +1783,7 @@
       "displayType": "Atelier"
     },
     {
-      "id": "В|АП. 302",
+      "id": "В|АП. 302|r185",
       "entrance": "В",
       "label": "АП. 302",
       "type": "apartment",
@@ -1794,7 +1794,7 @@
       "displayType": "Apartment"
     },
     {
-      "id": "В|АП. 303",
+      "id": "В|АП. 303|r186",
       "entrance": "В",
       "label": "АП. 303",
       "type": "apartment",
@@ -1805,7 +1805,7 @@
       "displayType": "Apartment"
     },
     {
-      "id": "В|АП.304",
+      "id": "В|АП.304|r187",
       "entrance": "В",
       "label": "АП.304",
       "type": "apartment",
@@ -1816,7 +1816,7 @@
       "displayType": "Apartment"
     },
     {
-      "id": "В|АТ. 401",
+      "id": "В|АТ. 401|r188",
       "entrance": "В",
       "label": "АТ. 401",
       "type": "atelier",
@@ -1827,7 +1827,7 @@
       "displayType": "Atelier"
     },
     {
-      "id": "В|АП. 402",
+      "id": "В|АП. 402|r189",
       "entrance": "В",
       "label": "АП. 402",
       "type": "apartment",
@@ -1838,7 +1838,7 @@
       "displayType": "Apartment"
     },
     {
-      "id": "В|АП. 403",
+      "id": "В|АП. 403|r190",
       "entrance": "В",
       "label": "АП. 403",
       "type": "apartment",
@@ -1849,7 +1849,7 @@
       "displayType": "Apartment"
     },
     {
-      "id": "В|АП. 404",
+      "id": "В|АП. 404|r191",
       "entrance": "В",
       "label": "АП. 404",
       "type": "apartment",
@@ -1860,7 +1860,7 @@
       "displayType": "Apartment"
     },
     {
-      "id": "В|АТ. 501",
+      "id": "В|АТ. 501|r192",
       "entrance": "В",
       "label": "АТ. 501",
       "type": "atelier",
@@ -1871,7 +1871,7 @@
       "displayType": "Atelier"
     },
     {
-      "id": "В|АП. 502",
+      "id": "В|АП. 502|r193",
       "entrance": "В",
       "label": "АП. 502",
       "type": "apartment",
@@ -1882,7 +1882,7 @@
       "displayType": "Apartment"
     },
     {
-      "id": "В|АП. 503",
+      "id": "В|АП. 503|r194",
       "entrance": "В",
       "label": "АП. 503",
       "type": "apartment",
@@ -1893,7 +1893,7 @@
       "displayType": "Apartment"
     },
     {
-      "id": "В|АП. 504",
+      "id": "В|АП. 504|r195",
       "entrance": "В",
       "label": "АП. 504",
       "type": "apartment",
@@ -1904,7 +1904,7 @@
       "displayType": "Apartment"
     },
     {
-      "id": "В|АП. 601",
+      "id": "В|АП. 601|r196",
       "entrance": "В",
       "label": "АП. 601",
       "type": "apartment",
@@ -1915,7 +1915,7 @@
       "displayType": "Apartment"
     },
     {
-      "id": "В|АП. 602",
+      "id": "В|АП. 602|r197",
       "entrance": "В",
       "label": "АП. 602",
       "type": "apartment",
@@ -1926,7 +1926,7 @@
       "displayType": "Apartment"
     },
     {
-      "id": "В|АП. 603",
+      "id": "В|АП. 603|r198",
       "entrance": "В",
       "label": "АП. 603",
       "type": "apartment",
@@ -1937,8 +1937,8 @@
       "displayType": "Apartment"
     },
     {
-      "id": "Д/Е|ГАРАЖ 3",
-      "entrance": "Д/Е",
+      "id": "Г|ГАРАЖ 3|r201",
+      "entrance": "Г",
       "label": "ГАРАЖ 3",
       "type": "garage",
       "category": "parking",
@@ -1948,7 +1948,7 @@
       "displayType": "Garage"
     },
     {
-      "id": "Г|АП. 001",
+      "id": "Г|АП. 001|r202",
       "entrance": "Г",
       "label": "АП. 001",
       "type": "apartment",
@@ -1959,7 +1959,7 @@
       "displayType": "Apartment"
     },
     {
-      "id": "Г|АП. 002",
+      "id": "Г|АП. 002|r203",
       "entrance": "Г",
       "label": "АП. 002",
       "type": "apartment",
@@ -1970,7 +1970,7 @@
       "displayType": "Apartment"
     },
     {
-      "id": "Г|АТ. 101",
+      "id": "Г|АТ. 101|r204",
       "entrance": "Г",
       "label": "АТ. 101",
       "type": "atelier",
@@ -1981,7 +1981,7 @@
       "displayType": "Atelier"
     },
     {
-      "id": "Г|АП. 102",
+      "id": "Г|АП. 102|r205",
       "entrance": "Г",
       "label": "АП. 102",
       "type": "apartment",
@@ -1992,7 +1992,7 @@
       "displayType": "Apartment"
     },
     {
-      "id": "Г|АП. 103",
+      "id": "Г|АП. 103|r206",
       "entrance": "Г",
       "label": "АП. 103",
       "type": "apartment",
@@ -2003,7 +2003,7 @@
       "displayType": "Apartment"
     },
     {
-      "id": "Г|АП. 104",
+      "id": "Г|АП. 104|r207",
       "entrance": "Г",
       "label": "АП. 104",
       "type": "apartment",
@@ -2014,7 +2014,7 @@
       "displayType": "Apartment"
     },
     {
-      "id": "Г|АТ. 201",
+      "id": "Г|АТ. 201|r208",
       "entrance": "Г",
       "label": "АТ. 201",
       "type": "atelier",
@@ -2025,7 +2025,7 @@
       "displayType": "Atelier"
     },
     {
-      "id": "Г|АП. 202",
+      "id": "Г|АП. 202|r209",
       "entrance": "Г",
       "label": "АП. 202",
       "type": "apartment",
@@ -2036,7 +2036,7 @@
       "displayType": "Apartment"
     },
     {
-      "id": "Г|АП. 203",
+      "id": "Г|АП. 203|r210",
       "entrance": "Г",
       "label": "АП. 203",
       "type": "apartment",
@@ -2047,7 +2047,7 @@
       "displayType": "Apartment"
     },
     {
-      "id": "Г|АП. 204",
+      "id": "Г|АП. 204|r211",
       "entrance": "Г",
       "label": "АП. 204",
       "type": "apartment",
@@ -2058,7 +2058,7 @@
       "displayType": "Apartment"
     },
     {
-      "id": "Г|АТ. 301",
+      "id": "Г|АТ. 301|r212",
       "entrance": "Г",
       "label": "АТ. 301",
       "type": "atelier",
@@ -2069,7 +2069,7 @@
       "displayType": "Atelier"
     },
     {
-      "id": "Г|АП. 302",
+      "id": "Г|АП. 302|r213",
       "entrance": "Г",
       "label": "АП. 302",
       "type": "apartment",
@@ -2080,7 +2080,7 @@
       "displayType": "Apartment"
     },
     {
-      "id": "Г|АП. 303",
+      "id": "Г|АП. 303|r214",
       "entrance": "Г",
       "label": "АП. 303",
       "type": "apartment",
@@ -2091,7 +2091,7 @@
       "displayType": "Apartment"
     },
     {
-      "id": "Г|АП.304",
+      "id": "Г|АП.304|r215",
       "entrance": "Г",
       "label": "АП.304",
       "type": "apartment",
@@ -2102,7 +2102,7 @@
       "displayType": "Apartment"
     },
     {
-      "id": "Г|АТ. 401",
+      "id": "Г|АТ. 401|r216",
       "entrance": "Г",
       "label": "АТ. 401",
       "type": "atelier",
@@ -2113,7 +2113,7 @@
       "displayType": "Atelier"
     },
     {
-      "id": "Г|АП. 402",
+      "id": "Г|АП. 402|r217",
       "entrance": "Г",
       "label": "АП. 402",
       "type": "apartment",
@@ -2124,7 +2124,7 @@
       "displayType": "Apartment"
     },
     {
-      "id": "Г|АП. 403",
+      "id": "Г|АП. 403|r218",
       "entrance": "Г",
       "label": "АП. 403",
       "type": "apartment",
@@ -2135,7 +2135,7 @@
       "displayType": "Apartment"
     },
     {
-      "id": "Г|АП. 404",
+      "id": "Г|АП. 404|r219",
       "entrance": "Г",
       "label": "АП. 404",
       "type": "apartment",
@@ -2146,7 +2146,7 @@
       "displayType": "Apartment"
     },
     {
-      "id": "Г|АТ. 501",
+      "id": "Г|АТ. 501|r220",
       "entrance": "Г",
       "label": "АТ. 501",
       "type": "atelier",
@@ -2157,7 +2157,7 @@
       "displayType": "Atelier"
     },
     {
-      "id": "Г|АП. 502",
+      "id": "Г|АП. 502|r221",
       "entrance": "Г",
       "label": "АП. 502",
       "type": "apartment",
@@ -2168,7 +2168,7 @@
       "displayType": "Apartment"
     },
     {
-      "id": "Г|АП. 503",
+      "id": "Г|АП. 503|r222",
       "entrance": "Г",
       "label": "АП. 503",
       "type": "apartment",
@@ -2179,7 +2179,7 @@
       "displayType": "Apartment"
     },
     {
-      "id": "Г|АП. 504",
+      "id": "Г|АП. 504|r223",
       "entrance": "Г",
       "label": "АП. 504",
       "type": "apartment",
@@ -2190,7 +2190,7 @@
       "displayType": "Apartment"
     },
     {
-      "id": "Г|АП. 601",
+      "id": "Г|АП. 601|r224",
       "entrance": "Г",
       "label": "АП. 601",
       "type": "apartment",
@@ -2201,7 +2201,7 @@
       "displayType": "Apartment"
     },
     {
-      "id": "Г|АП. 602",
+      "id": "Г|АП. 602|r225",
       "entrance": "Г",
       "label": "АП. 602",
       "type": "apartment",
@@ -2212,7 +2212,7 @@
       "displayType": "Apartment"
     },
     {
-      "id": "Г|АП. 603",
+      "id": "Г|АП. 603|r226",
       "entrance": "Г",
       "label": "АП. 603",
       "type": "apartment",
@@ -2223,7 +2223,7 @@
       "displayType": "Apartment"
     },
     {
-      "id": "В/Г|M1",
+      "id": "В/Г|M1|r227",
       "entrance": "В/Г",
       "label": "M1",
       "type": "storage",
@@ -2234,7 +2234,7 @@
       "displayType": "Storage"
     },
     {
-      "id": "В/Г|M2",
+      "id": "В/Г|M2|r228",
       "entrance": "В/Г",
       "label": "M2",
       "type": "storage",
@@ -2245,7 +2245,7 @@
       "displayType": "Storage"
     },
     {
-      "id": "В/Г|M3",
+      "id": "В/Г|M3|r229",
       "entrance": "В/Г",
       "label": "M3",
       "type": "storage",
@@ -2256,7 +2256,7 @@
       "displayType": "Storage"
     },
     {
-      "id": "В/Г|M4",
+      "id": "В/Г|M4|r230",
       "entrance": "В/Г",
       "label": "M4",
       "type": "storage",
@@ -2267,7 +2267,7 @@
       "displayType": "Storage"
     },
     {
-      "id": "В/Г|M5",
+      "id": "В/Г|M5|r231",
       "entrance": "В/Г",
       "label": "M5",
       "type": "storage",
@@ -2278,7 +2278,7 @@
       "displayType": "Storage"
     },
     {
-      "id": "В/Г|M6",
+      "id": "В/Г|M6|r232",
       "entrance": "В/Г",
       "label": "M6",
       "type": "storage",
@@ -2289,7 +2289,7 @@
       "displayType": "Storage"
     },
     {
-      "id": "В/Г|M7",
+      "id": "В/Г|M7|r233",
       "entrance": "В/Г",
       "label": "M7",
       "type": "storage",
@@ -2300,7 +2300,7 @@
       "displayType": "Storage"
     },
     {
-      "id": "В/Г|M8",
+      "id": "В/Г|M8|r234",
       "entrance": "В/Г",
       "label": "M8",
       "type": "storage",
@@ -2311,7 +2311,7 @@
       "displayType": "Storage"
     },
     {
-      "id": "В/Г|M9",
+      "id": "В/Г|M9|r235",
       "entrance": "В/Г",
       "label": "M9",
       "type": "storage",
@@ -2322,7 +2322,7 @@
       "displayType": "Storage"
     },
     {
-      "id": "В/Г|M10",
+      "id": "В/Г|M10|r236",
       "entrance": "В/Г",
       "label": "M10",
       "type": "storage",
@@ -2333,7 +2333,7 @@
       "displayType": "Storage"
     },
     {
-      "id": "В/Г|М11",
+      "id": "В/Г|М11|r237",
       "entrance": "В/Г",
       "label": "М11",
       "type": "storage",
@@ -2344,7 +2344,7 @@
       "displayType": "Storage"
     },
     {
-      "id": "В/Г|М12",
+      "id": "В/Г|М12|r238",
       "entrance": "В/Г",
       "label": "М12",
       "type": "storage",
@@ -2355,7 +2355,7 @@
       "displayType": "Storage"
     },
     {
-      "id": "В/Г|М12СТ",
+      "id": "В/Г|М12СТ|r239",
       "entrance": "В/Г",
       "label": "М12СТ",
       "type": "storage",
@@ -2366,7 +2366,7 @@
       "displayType": "Storage"
     },
     {
-      "id": "В/Г|M13",
+      "id": "В/Г|M13|r240",
       "entrance": "В/Г",
       "label": "M13",
       "type": "storage",
@@ -2377,7 +2377,7 @@
       "displayType": "Storage"
     },
     {
-      "id": "В/Г|M14",
+      "id": "В/Г|M14|r241",
       "entrance": "В/Г",
       "label": "M14",
       "type": "storage",
@@ -2388,7 +2388,7 @@
       "displayType": "Storage"
     },
     {
-      "id": "В/Г|M15",
+      "id": "В/Г|M15|r242",
       "entrance": "В/Г",
       "label": "M15",
       "type": "storage",
@@ -2399,7 +2399,7 @@
       "displayType": "Storage"
     },
     {
-      "id": "В/Г|M16",
+      "id": "В/Г|M16|r243",
       "entrance": "В/Г",
       "label": "M16",
       "type": "storage",
@@ -2410,7 +2410,7 @@
       "displayType": "Storage"
     },
     {
-      "id": "В/Г|M17",
+      "id": "В/Г|M17|r244",
       "entrance": "В/Г",
       "label": "M17",
       "type": "storage",
@@ -2421,7 +2421,7 @@
       "displayType": "Storage"
     },
     {
-      "id": "В/Г|M18",
+      "id": "В/Г|M18|r245",
       "entrance": "В/Г",
       "label": "M18",
       "type": "storage",
@@ -2432,7 +2432,7 @@
       "displayType": "Storage"
     },
     {
-      "id": "В/Г|M19",
+      "id": "В/Г|M19|r246",
       "entrance": "В/Г",
       "label": "M19",
       "type": "storage",
@@ -2443,7 +2443,7 @@
       "displayType": "Storage"
     },
     {
-      "id": "В/Г|M20",
+      "id": "В/Г|M20|r247",
       "entrance": "В/Г",
       "label": "M20",
       "type": "storage",
@@ -2454,7 +2454,7 @@
       "displayType": "Storage"
     },
     {
-      "id": "В/Г|M20СТ",
+      "id": "В/Г|M20СТ|r248",
       "entrance": "В/Г",
       "label": "M20СТ",
       "type": "storage",
@@ -2465,7 +2465,7 @@
       "displayType": "Storage"
     },
     {
-      "id": "В/Г|M21",
+      "id": "В/Г|M21|r249",
       "entrance": "В/Г",
       "label": "M21",
       "type": "storage",
@@ -2476,8 +2476,8 @@
       "displayType": "Storage"
     },
     {
-      "id": "Д/Е|ГАРАЖ 3",
-      "entrance": "Д/Е",
+      "id": "Д|ГАРАЖ 3|r252",
+      "entrance": "Д",
       "label": "ГАРАЖ 3",
       "type": "garage",
       "category": "parking",
@@ -2487,7 +2487,7 @@
       "displayType": "Garage"
     },
     {
-      "id": "Д|АП. 001",
+      "id": "Д|АП. 001|r253",
       "entrance": "Д",
       "label": "АП. 001",
       "type": "apartment",
@@ -2498,7 +2498,7 @@
       "displayType": "Apartment"
     },
     {
-      "id": "Д|АП. 002",
+      "id": "Д|АП. 002|r254",
       "entrance": "Д",
       "label": "АП. 002",
       "type": "apartment",
@@ -2509,7 +2509,7 @@
       "displayType": "Apartment"
     },
     {
-      "id": "Д|АТ. 101",
+      "id": "Д|АТ. 101|r255",
       "entrance": "Д",
       "label": "АТ. 101",
       "type": "atelier",
@@ -2520,7 +2520,7 @@
       "displayType": "Atelier"
     },
     {
-      "id": "Д|АП. 102",
+      "id": "Д|АП. 102|r256",
       "entrance": "Д",
       "label": "АП. 102",
       "type": "apartment",
@@ -2531,7 +2531,7 @@
       "displayType": "Apartment"
     },
     {
-      "id": "Д|АП. 103",
+      "id": "Д|АП. 103|r257",
       "entrance": "Д",
       "label": "АП. 103",
       "type": "apartment",
@@ -2542,7 +2542,7 @@
       "displayType": "Apartment"
     },
     {
-      "id": "Д|АП. 104",
+      "id": "Д|АП. 104|r258",
       "entrance": "Д",
       "label": "АП. 104",
       "type": "apartment",
@@ -2553,7 +2553,7 @@
       "displayType": "Apartment"
     },
     {
-      "id": "Д|АТ. 201",
+      "id": "Д|АТ. 201|r259",
       "entrance": "Д",
       "label": "АТ. 201",
       "type": "atelier",
@@ -2564,7 +2564,7 @@
       "displayType": "Atelier"
     },
     {
-      "id": "Д|АП. 202",
+      "id": "Д|АП. 202|r260",
       "entrance": "Д",
       "label": "АП. 202",
       "type": "apartment",
@@ -2575,7 +2575,7 @@
       "displayType": "Apartment"
     },
     {
-      "id": "Д|АП. 203",
+      "id": "Д|АП. 203|r261",
       "entrance": "Д",
       "label": "АП. 203",
       "type": "apartment",
@@ -2586,7 +2586,7 @@
       "displayType": "Apartment"
     },
     {
-      "id": "Д|АП. 204",
+      "id": "Д|АП. 204|r262",
       "entrance": "Д",
       "label": "АП. 204",
       "type": "apartment",
@@ -2597,7 +2597,7 @@
       "displayType": "Apartment"
     },
     {
-      "id": "Д|АТ. 301",
+      "id": "Д|АТ. 301|r263",
       "entrance": "Д",
       "label": "АТ. 301",
       "type": "atelier",
@@ -2608,7 +2608,7 @@
       "displayType": "Atelier"
     },
     {
-      "id": "Д|АП. 302",
+      "id": "Д|АП. 302|r264",
       "entrance": "Д",
       "label": "АП. 302",
       "type": "apartment",
@@ -2619,7 +2619,7 @@
       "displayType": "Apartment"
     },
     {
-      "id": "Д|АП. 303",
+      "id": "Д|АП. 303|r265",
       "entrance": "Д",
       "label": "АП. 303",
       "type": "apartment",
@@ -2630,7 +2630,7 @@
       "displayType": "Apartment"
     },
     {
-      "id": "Д|АП.304",
+      "id": "Д|АП.304|r266",
       "entrance": "Д",
       "label": "АП.304",
       "type": "apartment",
@@ -2641,7 +2641,7 @@
       "displayType": "Apartment"
     },
     {
-      "id": "Д|АТ. 401",
+      "id": "Д|АТ. 401|r267",
       "entrance": "Д",
       "label": "АТ. 401",
       "type": "atelier",
@@ -2652,7 +2652,7 @@
       "displayType": "Atelier"
     },
     {
-      "id": "Д|АП. 402",
+      "id": "Д|АП. 402|r268",
       "entrance": "Д",
       "label": "АП. 402",
       "type": "apartment",
@@ -2663,7 +2663,7 @@
       "displayType": "Apartment"
     },
     {
-      "id": "Д|АП. 403",
+      "id": "Д|АП. 403|r269",
       "entrance": "Д",
       "label": "АП. 403",
       "type": "apartment",
@@ -2674,7 +2674,7 @@
       "displayType": "Apartment"
     },
     {
-      "id": "Д|АП. 404",
+      "id": "Д|АП. 404|r270",
       "entrance": "Д",
       "label": "АП. 404",
       "type": "apartment",
@@ -2685,7 +2685,7 @@
       "displayType": "Apartment"
     },
     {
-      "id": "Д|АП. 502",
+      "id": "Д|АП. 502|r271",
       "entrance": "Д",
       "label": "АП. 502",
       "type": "apartment",
@@ -2696,7 +2696,7 @@
       "displayType": "Apartment"
     },
     {
-      "id": "Д|АП. 503",
+      "id": "Д|АП. 503|r272",
       "entrance": "Д",
       "label": "АП. 503",
       "type": "apartment",
@@ -2707,7 +2707,7 @@
       "displayType": "Apartment"
     },
     {
-      "id": "Д|АП. 504",
+      "id": "Д|АП. 504|r273",
       "entrance": "Д",
       "label": "АП. 504",
       "type": "apartment",
@@ -2718,7 +2718,7 @@
       "displayType": "Apartment"
     },
     {
-      "id": "Д|АП. 601",
+      "id": "Д|АП. 601|r274",
       "entrance": "Д",
       "label": "АП. 601",
       "type": "apartment",
@@ -2729,7 +2729,7 @@
       "displayType": "Apartment"
     },
     {
-      "id": "Д|АП. 602",
+      "id": "Д|АП. 602|r275",
       "entrance": "Д",
       "label": "АП. 602",
       "type": "apartment",
@@ -2740,7 +2740,7 @@
       "displayType": "Apartment"
     },
     {
-      "id": "Д|АП. 603",
+      "id": "Д|АП. 603|r276",
       "entrance": "Д",
       "label": "АП. 603",
       "type": "apartment",
@@ -2751,8 +2751,8 @@
       "displayType": "Apartment"
     },
     {
-      "id": "Д/Е|ГАРАЖ 2",
-      "entrance": "Д/Е",
+      "id": "E|ГАРАЖ 2|r279",
+      "entrance": "E",
       "label": "ГАРАЖ 2",
       "type": "garage",
       "category": "parking",
@@ -2762,8 +2762,8 @@
       "displayType": "Garage"
     },
     {
-      "id": "Д/Е|ГАРАЖ 3",
-      "entrance": "Д/Е",
+      "id": "E|ГАРАЖ 3|r280",
+      "entrance": "E",
       "label": "ГАРАЖ 3",
       "type": "garage",
       "category": "parking",
@@ -2773,8 +2773,8 @@
       "displayType": "Garage"
     },
     {
-      "id": "Д/Е|ГАРАЖ 4",
-      "entrance": "Д/Е",
+      "id": "E|ГАРАЖ 4|r281",
+      "entrance": "E",
       "label": "ГАРАЖ 4",
       "type": "garage",
       "category": "parking",
@@ -2784,8 +2784,8 @@
       "displayType": "Garage"
     },
     {
-      "id": "Д/Е|ГАРАЖ 5",
-      "entrance": "Д/Е",
+      "id": "E|ГАРАЖ 5|r282",
+      "entrance": "E",
       "label": "ГАРАЖ 5",
       "type": "garage",
       "category": "parking",
@@ -2795,8 +2795,8 @@
       "displayType": "Garage"
     },
     {
-      "id": "Д/Е|ГАРАЖ 6",
-      "entrance": "Д/Е",
+      "id": "E|ГАРАЖ 6|r283",
+      "entrance": "E",
       "label": "ГАРАЖ 6",
       "type": "garage",
       "category": "parking",
@@ -2806,8 +2806,8 @@
       "displayType": "Garage"
     },
     {
-      "id": "Д/Е|ГАРАЖ 7",
-      "entrance": "Д/Е",
+      "id": "E|ГАРАЖ 7|r284",
+      "entrance": "E",
       "label": "ГАРАЖ 7",
       "type": "garage",
       "category": "parking",
@@ -2817,7 +2817,7 @@
       "displayType": "Garage"
     },
     {
-      "id": "E|АП. 001",
+      "id": "E|АП. 001|r285",
       "entrance": "E",
       "label": "АП. 001",
       "type": "apartment",
@@ -2828,7 +2828,7 @@
       "displayType": "Apartment"
     },
     {
-      "id": "E|АП. 002",
+      "id": "E|АП. 002|r286",
       "entrance": "E",
       "label": "АП. 002",
       "type": "apartment",
@@ -2839,7 +2839,7 @@
       "displayType": "Apartment"
     },
     {
-      "id": "E|АТ. 101",
+      "id": "E|АТ. 101|r287",
       "entrance": "E",
       "label": "АТ. 101",
       "type": "atelier",
@@ -2850,7 +2850,7 @@
       "displayType": "Atelier"
     },
     {
-      "id": "E|АП. 102",
+      "id": "E|АП. 102|r288",
       "entrance": "E",
       "label": "АП. 102",
       "type": "apartment",
@@ -2861,7 +2861,7 @@
       "displayType": "Apartment"
     },
     {
-      "id": "E|АП. 103",
+      "id": "E|АП. 103|r289",
       "entrance": "E",
       "label": "АП. 103",
       "type": "apartment",
@@ -2872,7 +2872,7 @@
       "displayType": "Apartment"
     },
     {
-      "id": "E|АП. 104",
+      "id": "E|АП. 104|r290",
       "entrance": "E",
       "label": "АП. 104",
       "type": "apartment",
@@ -2883,7 +2883,7 @@
       "displayType": "Apartment"
     },
     {
-      "id": "E|АП. 105",
+      "id": "E|АП. 105|r291",
       "entrance": "E",
       "label": "АП. 105",
       "type": "apartment",
@@ -2894,7 +2894,7 @@
       "displayType": "Apartment"
     },
     {
-      "id": "E|АТ. 201",
+      "id": "E|АТ. 201|r292",
       "entrance": "E",
       "label": "АТ. 201",
       "type": "atelier",
@@ -2905,7 +2905,7 @@
       "displayType": "Atelier"
     },
     {
-      "id": "E|АП. 202",
+      "id": "E|АП. 202|r293",
       "entrance": "E",
       "label": "АП. 202",
       "type": "apartment",
@@ -2916,7 +2916,7 @@
       "displayType": "Apartment"
     },
     {
-      "id": "E|АП. 203",
+      "id": "E|АП. 203|r294",
       "entrance": "E",
       "label": "АП. 203",
       "type": "apartment",
@@ -2927,7 +2927,7 @@
       "displayType": "Apartment"
     },
     {
-      "id": "E|АП. 204",
+      "id": "E|АП. 204|r295",
       "entrance": "E",
       "label": "АП. 204",
       "type": "apartment",
@@ -2938,7 +2938,7 @@
       "displayType": "Apartment"
     },
     {
-      "id": "E|АП. 205",
+      "id": "E|АП. 205|r296",
       "entrance": "E",
       "label": "АП. 205",
       "type": "apartment",
@@ -2949,7 +2949,7 @@
       "displayType": "Apartment"
     },
     {
-      "id": "E|АТ. 301",
+      "id": "E|АТ. 301|r297",
       "entrance": "E",
       "label": "АТ. 301",
       "type": "atelier",
@@ -2960,7 +2960,7 @@
       "displayType": "Atelier"
     },
     {
-      "id": "E|АП. 302",
+      "id": "E|АП. 302|r298",
       "entrance": "E",
       "label": "АП. 302",
       "type": "apartment",
@@ -2971,7 +2971,7 @@
       "displayType": "Apartment"
     },
     {
-      "id": "E|АП. 303",
+      "id": "E|АП. 303|r299",
       "entrance": "E",
       "label": "АП. 303",
       "type": "apartment",
@@ -2982,7 +2982,7 @@
       "displayType": "Apartment"
     },
     {
-      "id": "E|АП.304",
+      "id": "E|АП.304|r300",
       "entrance": "E",
       "label": "АП.304",
       "type": "apartment",
@@ -2993,7 +2993,7 @@
       "displayType": "Apartment"
     },
     {
-      "id": "E|АП. 305",
+      "id": "E|АП. 305|r301",
       "entrance": "E",
       "label": "АП. 305",
       "type": "apartment",
@@ -3004,7 +3004,7 @@
       "displayType": "Apartment"
     },
     {
-      "id": "E|АТ. 401",
+      "id": "E|АТ. 401|r302",
       "entrance": "E",
       "label": "АТ. 401",
       "type": "atelier",
@@ -3015,7 +3015,7 @@
       "displayType": "Atelier"
     },
     {
-      "id": "E|АП. 402",
+      "id": "E|АП. 402|r303",
       "entrance": "E",
       "label": "АП. 402",
       "type": "apartment",
@@ -3026,7 +3026,7 @@
       "displayType": "Apartment"
     },
     {
-      "id": "E|АП. 403",
+      "id": "E|АП. 403|r304",
       "entrance": "E",
       "label": "АП. 403",
       "type": "apartment",
@@ -3037,7 +3037,7 @@
       "displayType": "Apartment"
     },
     {
-      "id": "E|АП. 404",
+      "id": "E|АП. 404|r305",
       "entrance": "E",
       "label": "АП. 404",
       "type": "apartment",
@@ -3048,7 +3048,7 @@
       "displayType": "Apartment"
     },
     {
-      "id": "E|АП. 405",
+      "id": "E|АП. 405|r306",
       "entrance": "E",
       "label": "АП. 405",
       "type": "apartment",
@@ -3059,7 +3059,7 @@
       "displayType": "Apartment"
     },
     {
-      "id": "E|АТ. 501",
+      "id": "E|АТ. 501|r307",
       "entrance": "E",
       "label": "АТ. 501",
       "type": "atelier",
@@ -3070,7 +3070,7 @@
       "displayType": "Atelier"
     },
     {
-      "id": "E|АП. 502",
+      "id": "E|АП. 502|r308",
       "entrance": "E",
       "label": "АП. 502",
       "type": "apartment",
@@ -3081,7 +3081,7 @@
       "displayType": "Apartment"
     },
     {
-      "id": "E|АП. 503",
+      "id": "E|АП. 503|r309",
       "entrance": "E",
       "label": "АП. 503",
       "type": "apartment",
@@ -3092,7 +3092,7 @@
       "displayType": "Apartment"
     },
     {
-      "id": "E|АП. 504",
+      "id": "E|АП. 504|r310",
       "entrance": "E",
       "label": "АП. 504",
       "type": "apartment",
@@ -3103,7 +3103,7 @@
       "displayType": "Apartment"
     },
     {
-      "id": "E|АП. 601",
+      "id": "E|АП. 601|r311",
       "entrance": "E",
       "label": "АП. 601",
       "type": "apartment",
@@ -3114,7 +3114,7 @@
       "displayType": "Apartment"
     },
     {
-      "id": "E|АП. 602",
+      "id": "E|АП. 602|r312",
       "entrance": "E",
       "label": "АП. 602",
       "type": "apartment",
@@ -3125,7 +3125,7 @@
       "displayType": "Apartment"
     },
     {
-      "id": "E|АП. 603",
+      "id": "E|АП. 603|r313",
       "entrance": "E",
       "label": "АП. 603",
       "type": "apartment",
@@ -3136,7 +3136,7 @@
       "displayType": "Apartment"
     },
     {
-      "id": "Д/Е|M1",
+      "id": "Д/Е|M1|r314",
       "entrance": "Д/Е",
       "label": "M1",
       "type": "storage",
@@ -3147,7 +3147,7 @@
       "displayType": "Storage"
     },
     {
-      "id": "Д/Е|M2",
+      "id": "Д/Е|M2|r315",
       "entrance": "Д/Е",
       "label": "M2",
       "type": "storage",
@@ -3158,7 +3158,7 @@
       "displayType": "Storage"
     },
     {
-      "id": "Д/Е|M3",
+      "id": "Д/Е|M3|r316",
       "entrance": "Д/Е",
       "label": "M3",
       "type": "storage",
@@ -3169,7 +3169,7 @@
       "displayType": "Storage"
     },
     {
-      "id": "Д/Е|M4",
+      "id": "Д/Е|M4|r317",
       "entrance": "Д/Е",
       "label": "M4",
       "type": "storage",
@@ -3180,7 +3180,7 @@
       "displayType": "Storage"
     },
     {
-      "id": "Д/Е|M5",
+      "id": "Д/Е|M5|r318",
       "entrance": "Д/Е",
       "label": "M5",
       "type": "storage",
@@ -3191,7 +3191,7 @@
       "displayType": "Storage"
     },
     {
-      "id": "Д/Е|M6",
+      "id": "Д/Е|M6|r319",
       "entrance": "Д/Е",
       "label": "M6",
       "type": "storage",
@@ -3202,7 +3202,7 @@
       "displayType": "Storage"
     },
     {
-      "id": "Д/Е|M7",
+      "id": "Д/Е|M7|r320",
       "entrance": "Д/Е",
       "label": "M7",
       "type": "storage",
@@ -3213,7 +3213,7 @@
       "displayType": "Storage"
     },
     {
-      "id": "Д/Е|M8",
+      "id": "Д/Е|M8|r321",
       "entrance": "Д/Е",
       "label": "M8",
       "type": "storage",
@@ -3224,7 +3224,7 @@
       "displayType": "Storage"
     },
     {
-      "id": "Д/Е|M9",
+      "id": "Д/Е|M9|r322",
       "entrance": "Д/Е",
       "label": "M9",
       "type": "storage",
@@ -3235,7 +3235,7 @@
       "displayType": "Storage"
     },
     {
-      "id": "Д/Е|M10",
+      "id": "Д/Е|M10|r323",
       "entrance": "Д/Е",
       "label": "M10",
       "type": "storage",
@@ -3246,7 +3246,7 @@
       "displayType": "Storage"
     },
     {
-      "id": "Д/Е|М11",
+      "id": "Д/Е|М11|r324",
       "entrance": "Д/Е",
       "label": "М11",
       "type": "storage",
@@ -3257,7 +3257,7 @@
       "displayType": "Storage"
     },
     {
-      "id": "Д/Е|М12",
+      "id": "Д/Е|М12|r325",
       "entrance": "Д/Е",
       "label": "М12",
       "type": "storage",
@@ -3268,7 +3268,7 @@
       "displayType": "Storage"
     },
     {
-      "id": "Д/Е|M13",
+      "id": "Д/Е|M13|r326",
       "entrance": "Д/Е",
       "label": "M13",
       "type": "storage",
@@ -3279,7 +3279,7 @@
       "displayType": "Storage"
     },
     {
-      "id": "Д/Е|M14",
+      "id": "Д/Е|M14|r327",
       "entrance": "Д/Е",
       "label": "M14",
       "type": "storage",
@@ -3290,7 +3290,7 @@
       "displayType": "Storage"
     },
     {
-      "id": "Д/Е|M15",
+      "id": "Д/Е|M15|r328",
       "entrance": "Д/Е",
       "label": "M15",
       "type": "storage",
@@ -3301,7 +3301,7 @@
       "displayType": "Storage"
     },
     {
-      "id": "Д/Е|M16",
+      "id": "Д/Е|M16|r329",
       "entrance": "Д/Е",
       "label": "M16",
       "type": "storage",
