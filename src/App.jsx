@@ -46,7 +46,7 @@ function App() {
         eyebrow: 'White District',
         title: 'Monthly Maintenance Fee Calculator',
         intro:
-          'Select apartments and parking spots to see monthly fees per offer, VAT, and totals. Fees include common areas. Garages and ateliers are counted as residential units.',
+          'Select apartments and parking spots to see monthly fees per offer, VAT, and totals. Fees include common areas. Garages are counted with parking units.',
         selectedUnits: 'Selected units',
         residentialArea: 'Residential area (incl. common)',
         parkingArea: 'Parking area (incl. common)',
@@ -54,9 +54,10 @@ function App() {
         commonAreaLabel: 'Common area',
         totalAreaLabel: 'Total area',
         unitPicker: 'Unit picker',
-        unitPickerSubtitle: 'Add apartments, ateliers, garages, or parking spots.',
+        unitPickerSubtitle:
+          'Add apartments, ateliers, garages, parking spots, or storage rooms.',
         residentialTab: 'Residential units',
-        parkingTab: 'Parking spots',
+        parkingTab: 'Parking, garages & storage',
         searchLabel: 'Search',
         searchPlaceholder: 'e.g., АП. 101, ПМ 1-2',
         entranceLabel: 'Entrance',
@@ -88,7 +89,7 @@ function App() {
         eyebrow: 'White District',
         title: 'Калкулатор за месечна такса поддръжка',
         intro:
-          'Изберете апартаменти и паркоместа, за да видите месечните такси по оферти, ДДС и общи суми. Таксите включват общи части. Гаражите и ателиетата се считат за жилищни площи.',
+          'Изберете апартаменти и паркоместа, за да видите месечните такси по оферти, ДДС и общи суми. Таксите включват общи части. Гаражите се считат към паркинг площите.',
         selectedUnits: 'Избрани имоти',
         residentialArea: 'Жилищна площ (с общи части)',
         parkingArea: 'Паркинг площ (с общи части)',
@@ -97,9 +98,9 @@ function App() {
         totalAreaLabel: 'Обща площ',
         unitPicker: 'Избор на имоти',
         unitPickerSubtitle:
-          'Добавете апартаменти, ателиета, гаражи или паркоместа.',
-        residentialTab: 'Жилищни имоти и гаражи',
-        parkingTab: 'Паркоместа и мазета',
+          'Добавете апартаменти, ателиета, гаражи, паркоместа или мазета.',
+        residentialTab: 'Жилищни имоти',
+        parkingTab: 'Паркоместа, гаражи и мазета',
         searchLabel: 'Търсене',
         searchPlaceholder: 'напр. АП. 101, ПМ 1-2',
         entranceLabel: 'Вход',

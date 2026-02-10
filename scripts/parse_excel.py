@@ -101,7 +101,7 @@ def parse_units(xlsx_path: Path) -> list[dict]:
             display_type = "Atelier"
         elif unit_upper.startswith("ГАР"):
             unit_type = "garage"
-            category = "residential"
+            category = "parking"
             display_type = "Garage"
         elif unit_upper.startswith("ПМ"):
             unit_type = "parking"
