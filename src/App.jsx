@@ -181,8 +181,11 @@ function App() {
   const entranceForTab = (unit, currentTab) =>
     currentTab === 'parking' ? toGroupedEntrance(unit.entrance) : unit.entrance
 
-  const displayEntrance = (unit) =>
-    isParkingUnit(unit) ? toGroupedEntrance(unit.entrance) : unit.entrance
+  const displayEntrance = (unit) => {
+    // Keep garage entrance specific (A, Б, В...), while parking/storages stay grouped.
+    if (unit.type === 'garage') return unit.entrance
+    return isParkingUnit(unit) ? toGroupedEntrance(unit.entrance) : unit.entrance
+  }
 
   const entrances = useMemo(() => {
     const values = units
