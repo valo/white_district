@@ -162,10 +162,32 @@ function App() {
       .replace(/Д/g, 'D')
       .replace(/Е/g, 'E')
 
+  const toGroupedEntrance = (value) => {
+    const normalized = normalizeEntrance(value)
+
+    if (normalized === 'A' || normalized === 'B' || normalized === 'A/B') {
+      return 'А/Б'
+    }
+    if (normalized === 'V' || normalized === 'G' || normalized === 'V/G') {
+      return 'В/Г'
+    }
+    if (normalized === 'D' || normalized === 'E' || normalized === 'D/E') {
+      return 'Д/Е'
+    }
+
+    return String(value)
+  }
+
+  const entranceForTab = (unit, currentTab) =>
+    currentTab === 'parking' ? toGroupedEntrance(unit.entrance) : unit.entrance
+
+  const displayEntrance = (unit) =>
+    isParkingUnit(unit) ? toGroupedEntrance(unit.entrance) : unit.entrance
+
   const entrances = useMemo(() => {
     const values = units
       .filter((unit) => matchesTab(unit, tab))
-      .map((unit) => unit.entrance)
+      .map((unit) => entranceForTab(unit, tab))
     return Array.from(new Set(values)).sort((a, b) => {
       const [rankA, secondaryA, valueA] = getEntranceRank(a)
       const [rankB, secondaryB, valueB] = getEntranceRank(b)
@@ -185,7 +207,7 @@ function App() {
       .filter((unit) => matchesTab(unit, tab))
       .filter((unit) => {
         if (!normalizedEntrance) return true
-        return normalizeEntrance(unit.entrance) === normalizedEntrance
+        return normalizeEntrance(entranceForTab(unit, tab)) === normalizedEntrance
       })
       .filter((unit) =>
         normalizedSearch.length === 0
@@ -194,8 +216,9 @@ function App() {
       )
       .sort(
         (a, b) =>
-          a.entrance.localeCompare(b.entrance, 'bg', { numeric: true }) ||
-          a.label.localeCompare(b.label, 'bg', { numeric: true })
+          entranceForTab(a, tab).localeCompare(entranceForTab(b, tab), 'bg', {
+            numeric: true,
+          }) || a.label.localeCompare(b.label, 'bg', { numeric: true })
       )
   }, [tab, units, entranceFilter, search])
 
@@ -439,7 +462,7 @@ function App() {
                     <div className="unit-meta">
                       <span>{displayType(unit)}</span>
                       <span>
-                        {text.entranceLabel} {unit.entrance}
+                        {text.entranceLabel} {displayEntrance(unit)}
                       </span>
                       <span>
                         {text.baseAreaLabel} {areaFormatter.format(unit.area)} m²
@@ -506,7 +529,7 @@ function App() {
                     <div className="unit-meta">
                       <span>{displayType(unit)}</span>
                       <span>
-                        {text.entranceLabel} {unit.entrance}
+                        {text.entranceLabel} {displayEntrance(unit)}
                       </span>
                       <span>
                         {text.baseAreaLabel} {areaFormatter.format(unit.area)} m²
