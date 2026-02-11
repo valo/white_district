@@ -109,7 +109,8 @@ def parse_units(xlsx_path: Path) -> list[dict]:
             display_type = "Parking"
         elif re.match(r"^[MМ]\d", unit_label):
             unit_type = "storage"
-            category = "parking"
+            # Storage units ("Мазе") are billed with residential rates.
+            category = "residential"
             display_type = "Storage"
         else:
             continue
