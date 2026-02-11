@@ -143,6 +143,9 @@ function App() {
   const isResidentialUnit = (unit) =>
     unit.type === 'apartment' || unit.type === 'atelier'
 
+  const isResidentialFeeUnit = (unit) =>
+    isResidentialUnit(unit) || unit.type === 'storage'
+
   const isParkingUnit = (unit) =>
     unit.type === 'parking' || unit.type === 'garage' || unit.type === 'storage'
 
@@ -237,7 +240,7 @@ function App() {
         const commonArea = unit.commonArea ?? 0
         const totalArea = unit.totalArea ?? baseArea + commonArea
 
-        if (isResidentialUnit(unit)) {
+        if (isResidentialFeeUnit(unit)) {
           acc.residentialBase += baseArea
           acc.residentialCommon += commonArea
           acc.residentialTotal += totalArea
