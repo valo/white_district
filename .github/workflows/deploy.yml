@@ -26,6 +26,8 @@ jobs:
           node-version: 20
           cache: pnpm
       - run: pnpm install --frozen-lockfile
+      - run: pnpm exec playwright install --with-deps chromium
+      - run: pnpm test:e2e
       - run: pnpm build
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
