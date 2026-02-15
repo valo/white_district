@@ -312,8 +312,8 @@ function App() {
   const rateFormatter = useMemo(
     () =>
       new Intl.NumberFormat('bg-BG', {
-        minimumFractionDigits: 4,
-        maximumFractionDigits: 4,
+        minimumFractionDigits: 3,
+        maximumFractionDigits: 3,
       }),
     []
   )
