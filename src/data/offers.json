@@ -21,29 +21,41 @@
     {
       "id": "fm-solutions-24",
       "name": "FM Solutions (24ч портиер)",
-      "residentialRate": 0.593250822,
-      "parkingRate": 0.3247836859
+      "residentialRate": 0.5517779388,
+      "parkingRate": 0.2952205648
     },
     {
       "id": "fm-solutions",
       "name": "FM Solutions (без портиер)",
-      "residentialRate": 0.3753021753,
-      "parkingRate": 0.3247836859
+      "residentialRate": 0.3338292921,
+      "parkingRate": 0.2952205648
     },
     {
       "id": "24",
       "name": "Общ Дом (24ч портиер)",
-      "residentialRate": 0.5783347994,
-      "parkingRate": 0.3292043813
+      "residentialRate": 0.5812911115,
+      "parkingRate": 0.3321606935
     },
     {
       "id": "offer-7",
       "name": "Общ Дом (без портиер)",
-      "residentialRate": 0.2567712223,
-      "parkingRate": 0.3292043813
+      "residentialRate": 0.2597275344,
+      "parkingRate": 0.3321606935
     },
     {
-      "id": "offer-8",
+      "id": "24",
+      "name": "“ГАБРИЕЛА МЕНИДЖМЪНТ” (24ч портиер)",
+      "residentialRate": 0.7073693749,
+      "parkingRate": 0.6829222017
+    },
+    {
+      "id": "offer-9",
+      "name": "“ГАБРИЕЛА МЕНИДЖМЪНТ” ЕООД (без портиер)",
+      "residentialRate": 0.2794631556,
+      "parkingRate": 0.6829222017
+    },
+    {
+      "id": "offer-10",
       "name": "Премиум Естейт",
       "residentialRate": 0.9,
       "parkingRate": 0.5
