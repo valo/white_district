@@ -31,6 +31,10 @@ def round2(value: float) -> float:
     return round(float(value) + 1e-9, 2)
 
 
+def round3(value: float) -> float:
+    return round(float(value) + 1e-12, 3)
+
+
 def find_column_index(header_row: list, predicate) -> int:
     for idx, value in enumerate(header_row):
         if predicate(str(value)):
@@ -194,8 +198,8 @@ def parse_offers(xlsx_path: Path) -> list[dict]:
             {
                 "id": offer_id,
                 "name": str(column),
-                "residentialRate": float(res_value) if pd.notna(res_value) else 0.0,
-                "parkingRate": float(park_value) if pd.notna(park_value) else 0.0,
+                "residentialRate": round3(res_value) if pd.notna(res_value) else 0.0,
+                "parkingRate": round3(park_value) if pd.notna(park_value) else 0.0,
             }
         )
 
