@@ -57,7 +57,11 @@ jobs:
       - name: Run relevant preview test with video
         run: PW_VIDEO=1 pnpm exec playwright test --grep "@preview.*@${{ steps.pick.outputs.tag }}"
 
-      - name: Save preview video directly in PR branch
+      - name: Install ffmpeg for MP4 conversion
+        if: success()
+        run: sudo apt-get update && sudo apt-get install -y ffmpeg
+
+      - name: Save preview video directly in PR branch (MP4 + WebM)
         if: success()
         env:
           PR_NUMBER: ${{ github.event.pull_request.number }}
@@ -72,12 +76,15 @@ jobs:
           fi
 
           mkdir -p preview-videos
-          TARGET="preview-videos/pr-${PR_NUMBER}-${PREVIEW_TAG}.webm"
-          cp "$VIDEO_FILE" "$TARGET"
+          WEBM_TARGET="preview-videos/pr-${PR_NUMBER}-${PREVIEW_TAG}.webm"
+          MP4_TARGET="preview-videos/pr-${PR_NUMBER}-${PREVIEW_TAG}.mp4"
+
+          cp "$VIDEO_FILE" "$WEBM_TARGET"
+          ffmpeg -y -i "$VIDEO_FILE" -c:v libx264 -pix_fmt yuv420p -movflags +faststart "$MP4_TARGET"
 
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add "$TARGET"
+          git add "$WEBM_TARGET" "$MP4_TARGET"
           if ! git diff --cached --quiet; then
             git commit -m "chore: update preview video for PR #${PR_NUMBER} (${PREVIEW_TAG}) [skip ci]"
             git push origin "HEAD:${HEAD_REF}"
@@ -90,7 +97,10 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: playwright-preview-video-${{ steps.pick.outputs.tag }}
-          path: test-results/**/video.webm
+          path: |
+            test-results/**/video.webm
+            preview-videos/*.mp4
+            preview-videos/*.webm
           if-no-files-found: warn
           retention-days: 14
 
@@ -102,14 +112,17 @@ jobs:
             const tag = `${{ steps.pick.outputs.tag }}`
             const pr = context.payload.pull_request.number
             const headRef = context.payload.pull_request.head.ref
-            const filePath = `preview-videos/pr-${pr}-${tag}.webm`
-            const fileUrl = `https://github.com/${context.repo.owner}/${context.repo.repo}/blob/${headRef}/${filePath}`
+            const mp4Path = `preview-videos/pr-${pr}-${tag}.mp4`
+            const webmPath = `preview-videos/pr-${pr}-${tag}.webm`
+            const mp4Url = `https://github.com/${context.repo.owner}/${context.repo.repo}/blob/${headRef}/${mp4Path}`
+            const webmUrl = `https://github.com/${context.repo.owner}/${context.repo.repo}/blob/${headRef}/${webmPath}`
             const runUrl = `https://github.com/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId}`
 
             const body = [
               `🎬 Playwright preview ready (**${tag}**).`,
               '',
-              `Direct video in GitHub: ${fileUrl}`,
+              `Direct MP4 video in GitHub: ${mp4Url}`,
+              `WebM fallback: ${webmUrl}`,
               `CI run (artifact fallback): ${runUrl}`,
             ].join('\n')
 
