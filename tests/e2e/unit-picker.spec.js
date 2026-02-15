@@ -13,7 +13,19 @@ test.beforeEach(async ({ page }) => {
   await page.goto('/')
 })
 
-test('adds units to selected list and updates selected count', async ({ page }) => {
+test('@preview @fees shows fee table changes after selecting a unit', async ({ page }) => {
+  await unitCard(page, 'АП. 001').getByRole('button', { name: 'Добави' }).click()
+
+  const feesTable = page.locator('table tbody tr')
+  await expect(feesTable).toHaveCount(10)
+
+  const firstRow = feesTable.first()
+  await expect(firstRow.locator('td').nth(1)).toContainText('€/m²')
+  await expect(firstRow.locator('td').nth(2)).toContainText('€/m²')
+  await expect(firstRow.locator('td').nth(5)).toContainText('€')
+})
+
+test('@preview @unit-picker adds units to selected list and updates selected count', async ({ page }) => {
   await expect(page.getByText('Няма избрани имоти. Добавете от списъка.')).toBeVisible()
 
   const card = unitCard(page, 'АП. 001')

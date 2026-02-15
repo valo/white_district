@@ -1,0 +1,134 @@
+name: PR Playwright Preview Video
+
+on:
+  pull_request:
+    branches: [main]
+    types: [opened, synchronize, reopened]
+    paths-ignore:
+      - 'preview-videos/**'
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  preview-video:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: pnpm/action-setup@v3
+        with:
+          version: 10
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: pnpm
+
+      - name: Pick relevant preview tag
+        id: pick
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const files = await github.paginate(github.rest.pulls.listFiles, {
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              pull_number: context.payload.pull_request.number,
+              per_page: 100,
+            })
+            const names = files.map(f => f.filename)
+
+            const feeRelated = names.some((n) =>
+              n.endsWith('.xlsx') ||
+              n === 'src/data/offers.json' ||
+              n === 'scripts/parse_excel.py'
+            )
+
+            const tag = feeRelated ? 'fees' : 'unit-picker'
+            core.setOutput('tag', tag)
+            core.info(`Selected preview tag: ${tag}`)
+
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm exec playwright install --with-deps chromium
+
+      - name: Run relevant preview test with video
+        run: PW_VIDEO=1 pnpm exec playwright test --grep "@preview.*@${{ steps.pick.outputs.tag }}"
+
+      - name: Install ffmpeg for MP4 conversion
+        if: success()
+        run: sudo apt-get update && sudo apt-get install -y ffmpeg
+
+      - name: Save preview video directly in PR branch (MP4 + WebM)
+        if: success()
+        env:
+          PR_NUMBER: ${{ github.event.pull_request.number }}
+          PREVIEW_TAG: ${{ steps.pick.outputs.tag }}
+          HEAD_REF: ${{ github.event.pull_request.head.ref }}
+        run: |
+          set -euo pipefail
+          VIDEO_FILE=$(find test-results -type f -name 'video.webm' | head -n 1)
+          if [ -z "${VIDEO_FILE:-}" ]; then
+            echo "No Playwright video file found in test-results"
+            exit 1
+          fi
+
+          mkdir -p preview-videos
+          WEBM_TARGET="preview-videos/pr-${PR_NUMBER}-${PREVIEW_TAG}.webm"
+          MP4_TARGET="preview-videos/pr-${PR_NUMBER}-${PREVIEW_TAG}.mp4"
+
+          cp "$VIDEO_FILE" "$WEBM_TARGET"
+          ffmpeg -y -i "$VIDEO_FILE" -c:v libx264 -pix_fmt yuv420p -movflags +faststart "$MP4_TARGET"
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add "$WEBM_TARGET" "$MP4_TARGET"
+          if ! git diff --cached --quiet; then
+            git commit -m "chore: update preview video for PR #${PR_NUMBER} (${PREVIEW_TAG}) [skip ci]"
+            git push origin "HEAD:${HEAD_REF}"
+          else
+            echo "Preview video unchanged"
+          fi
+
+      - name: Keep artifact fallback (optional)
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: playwright-preview-video-${{ steps.pick.outputs.tag }}
+          path: |
+            test-results/**/video.webm
+            preview-videos/*.mp4
+            preview-videos/*.webm
+          if-no-files-found: warn
+          retention-days: 14
+
+      - name: Comment PR with direct GitHub video link
+        if: always()
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const tag = `${{ steps.pick.outputs.tag }}`
+            const pr = context.payload.pull_request.number
+            const headRef = context.payload.pull_request.head.ref
+            const mp4Path = `preview-videos/pr-${pr}-${tag}.mp4`
+            const webmPath = `preview-videos/pr-${pr}-${tag}.webm`
+            const mp4Url = `https://github.com/${context.repo.owner}/${context.repo.repo}/blob/${headRef}/${mp4Path}`
+            const webmUrl = `https://github.com/${context.repo.owner}/${context.repo.repo}/blob/${headRef}/${webmPath}`
+            const runUrl = `https://github.com/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId}`
+
+            const body = [
+              `🎬 Playwright preview ready (**${tag}**).`,
+              '',
+              `Direct MP4 video in GitHub: ${mp4Url}`,
+              `WebM fallback: ${webmUrl}`,
+              `CI run (artifact fallback): ${runUrl}`,
+            ].join('\n')
+
+            await github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: pr,
+              body,
+            })
