@@ -3,56 +3,56 @@
     {
       "id": "v1-24",
       "name": "Стопанка V1 (24ч портиер)",
-      "residentialRate": 0.552,
-      "parkingRate": 0.227
+      "residentialRate": 0.551649729,
+      "parkingRate": 0.2268666856
     },
     {
       "id": "v2-8",
       "name": "Стопанка V2 (8ч портиер)",
-      "residentialRate": 0.423,
-      "parkingRate": 0.227
+      "residentialRate": 0.4226271076,
+      "parkingRate": 0.2268666856
     },
     {
       "id": "v3",
       "name": "Стопанка V3 (без портиер)",
-      "residentialRate": 0.343,
-      "parkingRate": 0.227
+      "residentialRate": 0.343228892,
+      "parkingRate": 0.2268666856
     },
     {
       "id": "fm-solutions-24",
       "name": "FM Solutions (24ч портиер)",
-      "residentialRate": 0.552,
-      "parkingRate": 0.295
+      "residentialRate": 0.5517779388,
+      "parkingRate": 0.2952205648
     },
     {
       "id": "fm-solutions",
       "name": "FM Solutions (без портиер)",
-      "residentialRate": 0.334,
-      "parkingRate": 0.295
+      "residentialRate": 0.3338292921,
+      "parkingRate": 0.2952205648
     },
     {
       "id": "24",
       "name": "Общ Дом (24ч портиер)",
-      "residentialRate": 0.581,
-      "parkingRate": 0.332
+      "residentialRate": 0.5812911115,
+      "parkingRate": 0.3321606935
     },
     {
       "id": "offer-7",
       "name": "Общ Дом (без портиер)",
-      "residentialRate": 0.26,
-      "parkingRate": 0.332
+      "residentialRate": 0.2597275344,
+      "parkingRate": 0.3321606935
     },
     {
       "id": "24",
       "name": "“ГАБРИЕЛА МЕНИДЖМЪНТ” (24ч портиер)",
-      "residentialRate": 0.601,
-      "parkingRate": 0.581
+      "residentialRate": 0.6010945923,
+      "parkingRate": 0.580721948
     },
     {
       "id": "offer-9",
       "name": "“ГАБРИЕЛА МЕНИДЖМЪНТ” ЕООД (без портиер)",
-      "residentialRate": 0.245,
-      "parkingRate": 0.581
+      "residentialRate": 0.2445060762,
+      "parkingRate": 0.580721948
     },
     {
       "id": "offer-10",
