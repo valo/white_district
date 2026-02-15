@@ -4,9 +4,11 @@ on:
   pull_request:
     branches: [main]
     types: [opened, synchronize, reopened]
+    paths-ignore:
+      - 'preview-videos/**'
 
 permissions:
-  contents: read
+  contents: write
   pull-requests: write
 
 jobs:
@@ -45,45 +47,75 @@ jobs:
               n === 'scripts/parse_excel.py'
             )
 
-            const tag = feeRelated ? '@fees' : '@unit-picker'
+            const tag = feeRelated ? 'fees' : 'unit-picker'
             core.setOutput('tag', tag)
-            core.info(`Changed files: ${names.join(', ')}`)
             core.info(`Selected preview tag: ${tag}`)
 
       - run: pnpm install --frozen-lockfile
       - run: pnpm exec playwright install --with-deps chromium
 
       - name: Run relevant preview test with video
-        run: PW_VIDEO=1 pnpm exec playwright test --grep "@preview.*${{ steps.pick.outputs.tag }}"
+        run: PW_VIDEO=1 pnpm exec playwright test --grep "@preview.*@${{ steps.pick.outputs.tag }}"
 
-      - name: Upload preview video artifact
+      - name: Save preview video directly in PR branch
+        if: success()
+        env:
+          PR_NUMBER: ${{ github.event.pull_request.number }}
+          PREVIEW_TAG: ${{ steps.pick.outputs.tag }}
+          HEAD_REF: ${{ github.event.pull_request.head.ref }}
+        run: |
+          set -euo pipefail
+          VIDEO_FILE=$(find test-results -type f -name 'video.webm' | head -n 1)
+          if [ -z "${VIDEO_FILE:-}" ]; then
+            echo "No Playwright video file found in test-results"
+            exit 1
+          fi
+
+          mkdir -p preview-videos
+          TARGET="preview-videos/pr-${PR_NUMBER}-${PREVIEW_TAG}.webm"
+          cp "$VIDEO_FILE" "$TARGET"
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add "$TARGET"
+          if ! git diff --cached --quiet; then
+            git commit -m "chore: update preview video for PR #${PR_NUMBER} (${PREVIEW_TAG}) [skip ci]"
+            git push origin "HEAD:${HEAD_REF}"
+          else
+            echo "Preview video unchanged"
+          fi
+
+      - name: Keep artifact fallback (optional)
         if: always()
         uses: actions/upload-artifact@v4
         with:
           name: playwright-preview-video-${{ steps.pick.outputs.tag }}
-          path: |
-            test-results/**/video.webm
-            playwright-report/**
+          path: test-results/**/video.webm
           if-no-files-found: warn
           retention-days: 14
 
-      - name: Comment PR with preview run link
+      - name: Comment PR with direct GitHub video link
         if: always()
         uses: actions/github-script@v7
         with:
           script: |
             const tag = `${{ steps.pick.outputs.tag }}`
+            const pr = context.payload.pull_request.number
+            const headRef = context.payload.pull_request.head.ref
+            const filePath = `preview-videos/pr-${pr}-${tag}.webm`
+            const fileUrl = `https://github.com/${context.repo.owner}/${context.repo.repo}/blob/${headRef}/${filePath}`
             const runUrl = `https://github.com/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId}`
+
             const body = [
-              `🎬 Playwright preview (${tag}) is ready.`,
+              `🎬 Playwright preview ready (**${tag}**).`,
               '',
-              `Open this run and download artifact: **playwright-preview-video-${tag}**`,
-              runUrl,
+              `Direct video in GitHub: ${fileUrl}`,
+              `CI run (artifact fallback): ${runUrl}`,
             ].join('\n')
 
             await github.rest.issues.createComment({
               owner: context.repo.owner,
               repo: context.repo.repo,
-              issue_number: context.payload.pull_request.number,
+              issue_number: pr,
               body,
             })
