@@ -9,6 +9,15 @@ const unitCard = (page, label) =>
 const selectedItem = (page, label) =>
   getSelectedPanel(page).locator('.selected-item').filter({ hasText: label }).first()
 
+const parseEuro = (value) =>
+  Number(
+    value
+      .replace(/€/g, '')
+      .replace(/\s/g, '')
+      .replace(/\./g, '')
+      .replace(',', '.')
+  )
+
 test.beforeEach(async ({ page }) => {
   await page.goto('/')
 })
@@ -17,12 +26,26 @@ test('@preview @fees shows fee table changes after selecting a unit', async ({ p
   await unitCard(page, 'АП. 001').getByRole('button', { name: 'Добави' }).click()
 
   const feesTable = page.locator('table tbody tr')
-  await expect(feesTable).toHaveCount(10)
+  await expect(feesTable).toHaveCount(11)
 
   const firstRow = feesTable.first()
   await expect(firstRow.locator('td').nth(1)).toContainText('€/m²')
   await expect(firstRow.locator('td').nth(2)).toContainText('€/m²')
+  await expect(firstRow.locator('td').nth(4)).toContainText('€')
   await expect(firstRow.locator('td').nth(5)).toContainText('€')
+  await expect(firstRow.locator('td').nth(6)).toContainText('€')
+})
+
+test('@preview @fees includes non-vat repair fund in the final total', async ({ page }) => {
+  await unitCard(page, 'АП. 001').getByRole('button', { name: 'Добави' }).click()
+
+  const firstRow = page.locator('table tbody tr').first()
+  const maintenance = parseEuro(await firstRow.locator('td').nth(3).innerText())
+  const repairFund = parseEuro(await firstRow.locator('td').nth(4).innerText())
+  const vat = parseEuro(await firstRow.locator('td').nth(5).innerText())
+  const total = parseEuro(await firstRow.locator('td').nth(6).innerText())
+
+  expect(total).toBeCloseTo(maintenance + repairFund + vat, 2)
 })
 
 test('@preview @unit-picker adds units to selected list and updates selected count', async ({ page }) => {

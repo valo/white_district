@@ -8,16 +8,27 @@ import pandas as pd
 
 
 ROOT = Path(__file__).resolve().parents[1]
-DEFAULT_XLSX_PATH = ROOT / "docs" / "Площи - Премиум Естейт V2.xlsx"
+DEFAULT_XLSX_PATH = ROOT / "docs" / "Площи - Премиум Естейт V2.5.xlsx"
 OUTPUT_UNITS = ROOT / "src" / "data" / "units.json"
 OUTPUT_OFFERS = ROOT / "src" / "data" / "offers.json"
 
 
 def slugify(value: str, fallback: str) -> str:
-    value = value.strip().lower()
-    value = re.sub(r"[^a-z0-9]+", "-", value)
-    value = value.strip("-")
+    value = value.strip().casefold()
+    value = re.sub(r"[^\w]+", "-", value, flags=re.UNICODE)
+    value = value.strip("-_")
     return value or fallback
+
+
+def unique_slugify(value: str, fallback: str, used_ids: set[str]) -> str:
+    base = slugify(value, fallback)
+    candidate = base
+    suffix = 2
+    while candidate in used_ids:
+        candidate = f"{base}-{suffix}"
+        suffix += 1
+    used_ids.add(candidate)
+    return candidate
 
 
 def find_header_index(raw: pd.DataFrame, needle: str) -> int:
@@ -36,6 +47,21 @@ def find_column_index(header_row: list, predicate) -> int:
         if predicate(str(value)):
             return idx
     raise ValueError("Required column not found in header row.")
+
+
+def is_residential_fee_unit(unit: dict) -> bool:
+    return unit["type"] in {"apartment", "atelier", "storage"}
+
+
+def calculate_area_totals(units: list[dict]) -> dict[str, float]:
+    totals = {"residential": 0.0, "parking": 0.0}
+    for unit in units:
+        total_area = float(unit.get("totalArea") or (unit["area"] + unit.get("commonArea", 0)))
+        if is_residential_fee_unit(unit):
+            totals["residential"] += total_area
+        else:
+            totals["parking"] += total_area
+    return totals
 
 
 def parse_units(xlsx_path: Path) -> list[dict]:
@@ -163,39 +189,72 @@ def parse_units(xlsx_path: Path) -> list[dict]:
     return units
 
 
-def parse_offers(xlsx_path: Path) -> list[dict]:
+def parse_offers(xlsx_path: Path, area_totals: dict[str, float]) -> list[dict]:
     offers_df = pd.read_excel(xlsx_path, sheet_name="Оферти")
     base_columns = {"Категория", "Услуга", "Бележки"}
     offer_columns = [col for col in offers_df.columns if col not in base_columns]
 
-    residential_row = offers_df[offers_df["Категория"] == "Такса на кв.м. жилищна част"]
+    category_series = offers_df["Категория"].fillna("").astype(str).str.strip()
+    service_series = offers_df["Услуга"].fillna("").astype(str).str.strip()
+
+    residential_row = offers_df[category_series == "Такса на кв.м. жилищна част"]
 
     # The sheet labels this row either as "паркоместа" (parking spots) or (older versions) "гаражи".
     parking_row = offers_df[
-        offers_df["Категория"].isin(["Такса на кв.м. паркоместа", "Такса на кв.м. гаражи"])
+        category_series.isin(["Такса на кв.м. паркоместа", "Такса на кв.м. гаражи"])
     ]
 
-    if residential_row.empty or parking_row.empty:
-        raise ValueError("Missing rate rows for residential or parking fees.")
+    repair_residential_row = offers_df[
+        (category_series == "Фонд ремонти")
+        & service_series.str.contains("Жилищна част", case=False, regex=False)
+    ]
+    repair_parking_row = offers_df[
+        (category_series == "Фонд ремонти")
+        & service_series.str.contains("Сутерен", case=False, regex=False)
+    ]
+
+    if residential_row.empty or parking_row.empty or repair_residential_row.empty or repair_parking_row.empty:
+        raise ValueError("Missing rate rows for residential, parking, or repair fund fees.")
 
     residential_row = residential_row.iloc[0]
     parking_row = parking_row.iloc[0]
+    repair_residential_row = repair_residential_row.iloc[0]
+    repair_parking_row = repair_parking_row.iloc[0]
+
+    residential_area_total = area_totals["residential"]
+    parking_area_total = area_totals["parking"]
+
+    if residential_area_total <= 0 or parking_area_total <= 0:
+        raise ValueError("Area totals must be positive in order to apportion repair fund fees.")
 
     offers: list[dict] = []
+    used_ids: set[str] = set()
     for idx, column in enumerate(offer_columns, start=1):
         res_value = residential_row.get(column)
         park_value = parking_row.get(column)
+        repair_residential_value = repair_residential_row.get(column)
+        repair_parking_value = repair_parking_row.get(column)
 
         if pd.isna(res_value) and pd.isna(park_value):
             continue
 
-        offer_id = slugify(str(column), f"offer-{idx}")
+        offer_id = unique_slugify(str(column), f"offer-{idx}", used_ids)
         offers.append(
             {
                 "id": offer_id,
                 "name": str(column),
                 "residentialRate": float(res_value) if pd.notna(res_value) else 0.0,
                 "parkingRate": float(park_value) if pd.notna(park_value) else 0.0,
+                "repairFundResidentialRate": (
+                    float(repair_residential_value) / residential_area_total
+                    if pd.notna(repair_residential_value)
+                    else 0.0
+                ),
+                "repairFundParkingRate": (
+                    float(repair_parking_value) / parking_area_total
+                    if pd.notna(repair_parking_value)
+                    else 0.0
+                ),
             }
         )
 
@@ -216,7 +275,8 @@ def main(argv: list[str] | None = None) -> None:
 
     xlsx_path: Path = args.xlsx
     units = parse_units(xlsx_path)
-    offers = parse_offers(xlsx_path)
+    area_totals = calculate_area_totals(units)
+    offers = parse_offers(xlsx_path, area_totals)
 
     OUTPUT_UNITS.write_text(
         json.dumps({"units": units}, ensure_ascii=False, indent=2) + "\n",
