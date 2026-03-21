@@ -1,64 +1,92 @@
 {
   "offers": [
     {
-      "id": "v1-24",
+      "id": "стопанка-v1-24ч-портиер",
       "name": "Стопанка V1 (24ч портиер)",
-      "residentialRate": 0.551649729,
-      "parkingRate": 0.2268666856
+      "residentialRate": 0.5376983916,
+      "parkingRate": 0.2499331951,
+      "repairFundResidentialRate": 0.1273154075462665,
+      "repairFundParkingRate": 0.1070630187203256
     },
     {
-      "id": "v2-8",
-      "name": "Стопанка V2 (8ч портиер)",
-      "residentialRate": 0.4226271076,
-      "parkingRate": 0.2268666856
+      "id": "стопанка-v2-8-ч-портиер",
+      "name": "Стопанка V2 (8 ч портиер)",
+      "residentialRate": 0.3356937748,
+      "parkingRate": 0.2499331951,
+      "repairFundResidentialRate": 0.1273154075462665,
+      "repairFundParkingRate": 0.1070630187203256
     },
     {
-      "id": "v3",
+      "id": "стопанка-v3-без-портиер",
       "name": "Стопанка V3 (без портиер)",
-      "residentialRate": 0.343228892,
-      "parkingRate": 0.2268666856
+      "residentialRate": 0.3523856051,
+      "parkingRate": 0.2510418122,
+      "repairFundResidentialRate": 0.1273154075462665,
+      "repairFundParkingRate": 0.1070630187203256
     },
     {
-      "id": "fm-solutions-24",
+      "id": "стопанка-v3-финална",
+      "name": "Стопанка V3 (финална)",
+      "residentialRate": 0.3625812309,
+      "parkingRate": 0.2817178217,
+      "repairFundResidentialRate": 0.1273154075462665,
+      "repairFundParkingRate": 0.1070630187203256
+    },
+    {
+      "id": "fm-solutions-24ч-портиер",
       "name": "FM Solutions (24ч портиер)",
-      "residentialRate": 0.5517779388,
-      "parkingRate": 0.2952205648
+      "residentialRate": 0.5397149725,
+      "parkingRate": 0.3271016236,
+      "repairFundResidentialRate": 0.1273154075462665,
+      "repairFundParkingRate": 0.1070630187203256
     },
     {
-      "id": "fm-solutions",
+      "id": "fm-solutions-без-портиер",
       "name": "FM Solutions (без портиер)",
-      "residentialRate": 0.3338292921,
-      "parkingRate": 0.2952205648
+      "residentialRate": 0.3284758588,
+      "parkingRate": 0.3271016236,
+      "repairFundResidentialRate": 0.1273154075462665,
+      "repairFundParkingRate": 0.1070630187203256
     },
     {
-      "id": "24",
+      "id": "общ-дом-24ч-портиер",
       "name": "Общ Дом (24ч портиер)",
-      "residentialRate": 0.5812911115,
-      "parkingRate": 0.3321606935
+      "residentialRate": 0.5690173266,
+      "parkingRate": 0.3666061225,
+      "repairFundResidentialRate": 0.1273154075462665,
+      "repairFundParkingRate": 0.1070630187203256
     },
     {
-      "id": "offer-7",
+      "id": "общ-дом-без-портиер",
       "name": "Общ Дом (без портиер)",
-      "residentialRate": 0.2597275344,
-      "parkingRate": 0.3321606935
+      "residentialRate": 0.2573530605,
+      "parkingRate": 0.3666061225,
+      "repairFundResidentialRate": 0.1273154075462665,
+      "repairFundParkingRate": 0.1070630187203256
     },
     {
-      "id": "24",
-      "name": "“ГАБРИЕЛА МЕНИДЖМЪНТ” (24ч портиер)",
-      "residentialRate": 0.6010945923,
-      "parkingRate": 0.580721948
+      "id": "габриела-мениджмънт-24ч-портиер",
+      "name": "Габриела Мениджмънт (24ч портиер)",
+      "residentialRate": 0.5875134165,
+      "parkingRate": 0.6638904099,
+      "repairFundResidentialRate": 0.1273154075462665,
+      "repairFundParkingRate": 0.1070630187203256
     },
     {
-      "id": "offer-9",
-      "name": "“ГАБРИЕЛА МЕНИДЖМЪНТ” ЕООД (без портиер)",
-      "residentialRate": 0.2445060762,
-      "parkingRate": 0.580721948
+      "id": "габриела-мениджмънт-без-портиер",
+      "name": "Габриела Мениджмънт (без портиер)",
+      "residentialRate": 0.2419024516,
+      "parkingRate": 0.6638904099,
+      "repairFundResidentialRate": 0.1273154075462665,
+      "repairFundParkingRate": 0.1070630187203256
     },
     {
-      "id": "offer-10",
+      "id": "премиум-естейт",
       "name": "Премиум Естейт",
       "residentialRate": 0.9,
-      "parkingRate": 0.5
+      "parkingRate": 0.5,
+      "repairFundResidentialRate": 0.1273154075462665,
+      "repairFundParkingRate": 0.1070630187203256
     }
   ]
 }
