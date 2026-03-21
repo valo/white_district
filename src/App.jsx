@@ -82,7 +82,7 @@ function App() {
         feeDetailsLink: 'Fee calculation details',
         currentTax: 'Current monthly total',
         taxRateNote:
-          'Current rates: 0.60 €/m² residential, 0.31 €/m² parking + 20% VAT on maintenance, plus repair fund without VAT (incl. common areas).',
+          'Current rates: 0.60 €/m² residential, 0.31 €/m² parking + 20% VAT on maintenance (incl. common areas).',
         languageLabel: 'Language',
         switchTo: 'Български',
       },
@@ -127,7 +127,7 @@ function App() {
         feeDetailsLink: 'Детайли за изчисленията',
         currentTax: 'Текуща месечна обща сума',
         taxRateNote:
-          'Текущи ставки: 0.60 €/м² жилищна част, 0.31 €/м² паркинг + 20% ДДС върху поддръжката, плюс фонд ремонти без ДДС (с общи части).',
+          'Текущи ставки: 0.60 €/м² жилищна част, 0.31 €/м² паркинг + 20% ДДС върху поддръжката (с общи части).',
         languageLabel: 'Език',
         switchTo: 'English',
       },
@@ -290,13 +290,9 @@ function App() {
     const maintenance =
       totals.residentialTotal * TAX_RESIDENTIAL +
       totals.parkingTotal * TAX_PARKING
-    const repairFund = offers.length
-      ? totals.residentialTotal * offers[0].repairFundResidentialRate +
-        totals.parkingTotal * offers[0].repairFundParkingRate
-      : 0
     const vat = maintenance * VAT_RATE
-    return maintenance + vat + repairFund
-  }, [offers, totals])
+    return maintenance + vat
+  }, [totals])
 
   const offerRows = useMemo(() => {
     return offers.map((offer) => {
