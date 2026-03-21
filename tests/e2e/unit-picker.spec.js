@@ -26,7 +26,7 @@ test('@preview @fees shows fee table changes after selecting a unit', async ({ p
   await unitCard(page, 'АП. 001').getByRole('button', { name: 'Добави' }).click()
 
   const feesTable = page.locator('table tbody tr')
-  await expect(feesTable).toHaveCount(11)
+  await expect(feesTable).toHaveCount(10)
 
   const firstRow = feesTable.first()
   await expect(firstRow.locator('td').nth(1)).toContainText('€/m²')

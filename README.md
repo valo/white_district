@@ -36,7 +36,7 @@ If the Excel file is updated, regenerate the JSON data:
 pnpm exec python3 scripts/parse_excel.py
 ```
 
-By default, the parser reads `docs/Площи - Премиум Естейт V2.5.xlsx`.
+By default, the parser reads `docs/Площи - Премиум Естейт V2.6.xlsx`.
 
 To parse a different workbook explicitly:
 ```bash

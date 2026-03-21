@@ -8,7 +8,7 @@ import pandas as pd
 
 
 ROOT = Path(__file__).resolve().parents[1]
-DEFAULT_XLSX_PATH = ROOT / "docs" / "Площи - Премиум Естейт V2.5.xlsx"
+DEFAULT_XLSX_PATH = ROOT / "docs" / "Площи - Премиум Естейт V2.6.xlsx"
 OUTPUT_UNITS = ROOT / "src" / "data" / "units.json"
 OUTPUT_OFFERS = ROOT / "src" / "data" / "offers.json"
 

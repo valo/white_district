@@ -9,14 +9,6 @@
       "repairFundParkingRate": 0.1070630187203256
     },
     {
-      "id": "стопанка-v2-8-ч-портиер",
-      "name": "Стопанка V2 (8 ч портиер)",
-      "residentialRate": 0.3356937748,
-      "parkingRate": 0.2499331951,
-      "repairFundResidentialRate": 0.1273154075462665,
-      "repairFundParkingRate": 0.1070630187203256
-    },
-    {
       "id": "стопанка-v3-без-портиер",
       "name": "Стопанка V3 (без портиер)",
       "residentialRate": 0.3523856051,
