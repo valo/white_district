@@ -1,4 +1,4 @@
-import { useMemo, useState } from 'react'
+import { useCallback, useMemo, useState } from 'react'
 import unitsData from './data/units.json'
 import offersData from './data/offers.json'
 import './App.css'
@@ -31,14 +31,14 @@ function App() {
     []
   )
 
-  const getEntranceRank = (value) => {
+  const getEntranceRank = useCallback((value) => {
     const [first, second] = String(value).split('/')
     const rankFor = (part) => {
       const letter = part.trim().charAt(0).toUpperCase()
       return entranceOrderMap[letter] ?? 999
     }
     return [rankFor(first), second ? rankFor(second) : 999, value]
-  }
+  }, [entranceOrderMap])
 
   const copy = useMemo(
     () => ({
@@ -46,7 +46,7 @@ function App() {
         eyebrow: 'White District',
         title: 'Monthly Maintenance Fee Calculator',
         intro:
-          'Select apartments and parking spots to see monthly fees per offer, VAT, and totals. Fees include common areas. Garages are counted with parking units.',
+          'Select apartments and parking spots to see monthly maintenance, VAT, repair fund, and totals per offer. Fees include common areas. Garages stay in the parking bucket.',
         selectedUnits: 'Selected units',
         residentialArea: 'Residential area (incl. common)',
         parkingArea: 'Parking area (incl. common)',
@@ -68,20 +68,21 @@ function App() {
         selectedSubtitle: 'Review your selection before calculating fees.',
         emptyState: 'No units selected yet. Add units from the picker.',
         feesTitle: 'Monthly fees by offer',
-        vatRate: 'VAT rate: 20%',
+        vatRate: 'VAT on maintenance: 20%',
         offer: 'Offer',
         residentialRate: 'Residential rate',
         parkingRate: 'Parking rate',
-        monthlyExVat: 'Monthly fee (excl. VAT)',
-        vat: 'VAT (20%)',
-        totalVat: 'Total incl. VAT',
+        monthlyExVat: 'Maintenance (taxable)',
+        repairFund: 'Repair fund',
+        vat: 'VAT on maintenance',
+        totalVat: 'Monthly total',
         deltaVsCurrent: 'Δ vs current fee',
         feeDetails:
           'For full details on how fees are calculated, see this spreadsheet.',
         feeDetailsLink: 'Fee calculation details',
-        currentTax: 'Current monthly tax (incl. VAT)',
+        currentTax: 'Current monthly total',
         taxRateNote:
-          'Tax rate: 0.60 €/m² residential, 0.31 €/m² parking + 20% VAT (incl. common areas)',
+          'Current rates: 0.60 €/m² residential, 0.31 €/m² parking + 20% VAT on maintenance (incl. common areas).',
         languageLabel: 'Language',
         switchTo: 'Български',
       },
@@ -89,7 +90,7 @@ function App() {
         eyebrow: 'White District',
         title: 'Калкулатор за месечна такса поддръжка',
         intro:
-          'Изберете апартаменти и паркоместа, за да видите месечните такси по оферти, ДДС и общи суми. Таксите включват общи части. Гаражите се считат към паркинг площите.',
+          'Изберете апартаменти и паркоместа, за да видите месечна поддръжка, ДДС, фонд ремонти и общи суми по оферти. Таксите включват общи части. Гаражите остават в паркинг групата.',
         selectedUnits: 'Избрани имоти',
         residentialArea: 'Жилищна площ (с общи части)',
         parkingArea: 'Паркинг площ (с общи части)',
@@ -112,20 +113,21 @@ function App() {
           'Прегледайте избора си преди изчисляване на таксите.',
         emptyState: 'Няма избрани имоти. Добавете от списъка.',
         feesTitle: 'Месечни такси по оферти',
-        vatRate: 'ДДС: 20%',
+        vatRate: 'ДДС върху поддръжката: 20%',
         offer: 'Оферта',
         residentialRate: 'Жилищна ставка',
         parkingRate: 'Паркинг ставка',
-        monthlyExVat: 'Месечна такса (без ДДС)',
-        vat: 'ДДС (20%)',
-        totalVat: 'Общо с ДДС',
+        monthlyExVat: 'Поддръжка (облагаема)',
+        repairFund: 'Фонд ремонти',
+        vat: 'ДДС върху поддръжката',
+        totalVat: 'Месечна обща сума',
         deltaVsCurrent: 'Разлика спрямо текущата такса',
         feeDetails:
           'За пълни подробности как се изчисляват таксите, вижте тази таблица.',
         feeDetailsLink: 'Детайли за изчисленията',
-        currentTax: 'Текуща месечна такса (с ДДС)',
+        currentTax: 'Текуща месечна обща сума',
         taxRateNote:
-          'Ставка: 0.60 €/м² жилищна част, 0.31 €/м² паркинг + 20% ДДС (с общи части)',
+          'Текущи ставки: 0.60 €/м² жилищна част, 0.31 €/м² паркинг + 20% ДДС върху поддръжката (с общи части).',
         languageLabel: 'Език',
         switchTo: 'English',
       },
@@ -140,32 +142,45 @@ function App() {
 
   const selectedSet = useMemo(() => new Set(selectedIds), [selectedIds])
 
-  const isResidentialUnit = (unit) =>
-    unit.type === 'apartment' || unit.type === 'atelier'
+  const isResidentialUnit = useCallback(
+    (unit) => unit.type === 'apartment' || unit.type === 'atelier',
+    []
+  )
 
-  const isResidentialFeeUnit = (unit) =>
-    isResidentialUnit(unit) || unit.type === 'storage'
+  const isResidentialFeeUnit = useCallback(
+    (unit) => isResidentialUnit(unit) || unit.type === 'storage',
+    [isResidentialUnit]
+  )
 
-  const isParkingUnit = (unit) =>
-    unit.type === 'parking' || unit.type === 'garage' || unit.type === 'storage'
+  const isParkingUnit = useCallback(
+    (unit) =>
+      unit.type === 'parking' || unit.type === 'garage' || unit.type === 'storage',
+    []
+  )
 
-  const matchesTab = (unit, currentTab) =>
-    currentTab === 'residential'
-      ? isResidentialUnit(unit)
-      : isParkingUnit(unit)
+  const matchesTab = useCallback(
+    (unit, currentTab) =>
+      currentTab === 'residential'
+        ? isResidentialUnit(unit)
+        : isParkingUnit(unit),
+    [isParkingUnit, isResidentialUnit]
+  )
 
-  const normalizeEntrance = (value) =>
-    String(value)
-      .trim()
-      .toUpperCase()
-      .replace(/А/g, 'A')
-      .replace(/Б/g, 'B')
-      .replace(/В/g, 'V')
-      .replace(/Г/g, 'G')
-      .replace(/Д/g, 'D')
-      .replace(/Е/g, 'E')
+  const normalizeEntrance = useCallback(
+    (value) =>
+      String(value)
+        .trim()
+        .toUpperCase()
+        .replace(/А/g, 'A')
+        .replace(/Б/g, 'B')
+        .replace(/В/g, 'V')
+        .replace(/Г/g, 'G')
+        .replace(/Д/g, 'D')
+        .replace(/Е/g, 'E'),
+    []
+  )
 
-  const toGroupedEntrance = (value) => {
+  const toGroupedEntrance = useCallback((value) => {
     const normalized = normalizeEntrance(value)
 
     if (normalized === 'A' || normalized === 'B' || normalized === 'A/B') {
@@ -179,10 +194,13 @@ function App() {
     }
 
     return String(value)
-  }
+  }, [normalizeEntrance])
 
-  const entranceForTab = (unit, currentTab) =>
-    currentTab === 'parking' ? toGroupedEntrance(unit.entrance) : unit.entrance
+  const entranceForTab = useCallback(
+    (unit, currentTab) =>
+      currentTab === 'parking' ? toGroupedEntrance(unit.entrance) : unit.entrance,
+    [toGroupedEntrance]
+  )
 
   const displayEntrance = (unit) => {
     // Keep garage entrance specific (A, Б, В...), while parking/storages stay grouped.
@@ -203,7 +221,7 @@ function App() {
         numeric: true,
       })
     })
-  }, [tab, units, entranceOrderMap])
+  }, [tab, units, getEntranceRank, matchesTab, entranceForTab])
 
   const filteredUnits = useMemo(() => {
     const normalizedSearch = search.trim().toLowerCase()
@@ -226,7 +244,7 @@ function App() {
             numeric: true,
           }) || a.label.localeCompare(b.label, 'bg', { numeric: true })
       )
-  }, [tab, units, entranceFilter, search])
+  }, [tab, units, entranceFilter, search, normalizeEntrance, matchesTab, entranceForTab])
 
   const selectedUnits = useMemo(
     () => units.filter((unit) => selectedSet.has(unit.id)),
@@ -262,18 +280,18 @@ function App() {
         count: 0,
       }
     )
-  }, [selectedUnits])
+  }, [selectedUnits, isResidentialFeeUnit])
 
   const VAT_RATE = 0.2
   const TAX_RESIDENTIAL = 0.6
   const TAX_PARKING = 0.31
 
   const currentTax = useMemo(() => {
-    const base =
+    const maintenance =
       totals.residentialTotal * TAX_RESIDENTIAL +
       totals.parkingTotal * TAX_PARKING
-    const vat = base * VAT_RATE
-    return base + vat
+    const vat = maintenance * VAT_RATE
+    return maintenance + vat
   }, [totals])
 
   const offerRows = useMemo(() => {
@@ -281,11 +299,14 @@ function App() {
       const monthly =
         totals.residentialTotal * offer.residentialRate +
         totals.parkingTotal * offer.parkingRate
+      const repairFund =
+        totals.residentialTotal * offer.repairFundResidentialRate +
+        totals.parkingTotal * offer.repairFundParkingRate
       const vat = monthly * VAT_RATE
-      const total = monthly + vat
+      const total = monthly + vat + repairFund
       const deltaPct =
         currentTax > 0 ? ((total - currentTax) / currentTax) * 100 : null
-      return { ...offer, monthly, vat, total, deltaPct }
+      return { ...offer, monthly, repairFund, vat, total, deltaPct }
     })
   }, [offers, totals, currentTax])
 
@@ -579,6 +600,7 @@ function App() {
                   <th>{text.residentialRate}</th>
                   <th>{text.parkingRate}</th>
                   <th>{text.monthlyExVat}</th>
+                  <th>{text.repairFund}</th>
                   <th>{text.vat}</th>
                   <th>{text.totalVat}</th>
                   <th>{text.deltaVsCurrent}</th>
@@ -591,6 +613,7 @@ function App() {
                     <td>{rateFormatter.format(offer.residentialRate)} €/m²</td>
                     <td>{rateFormatter.format(offer.parkingRate)} €/m²</td>
                     <td>{currencyFormatter.format(offer.monthly)}</td>
+                    <td>{currencyFormatter.format(offer.repairFund)}</td>
                     <td>{currencyFormatter.format(offer.vat)}</td>
                     <td>{currencyFormatter.format(offer.total)}</td>
                     <td>{formatDeltaPct(offer.deltaPct)}</td>
